@@ -1,0 +1,546 @@
+Name: Tags
+Type: FolderType
+Children:
+- Name: STP_MVS_01_IN_F1
+  Id: g=37ae7f5af0ddb4c06d909e73b2bccf5d
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F1"
+- Name: STP_MVS_01_IN_F1_STS
+  Id: g=8e422360b20d88d36bd1576eb13225f0
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F1_STS"
+- Name: STP_MVS_01_IN_F1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F1_STS_Co"
+- Name: STP_MVS_01_IN_F2
+  Id: g=9ed654e9777c5e38352555f5f4626883
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F2"
+- Name: STP_MVS_01_IN_F2_STS
+  Id: g=0285e7e916d59b2274672f2229e19bc8
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F2_STS"
+- Name: STP_MVS_01_IN_F2_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_IN_F2_STS_Co"
+- Name: STP_MVS_01_OG_F4
+  Id: g=72a86aa7ea4f17e245b3fecb67c67150
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F4"
+- Name: STP_MVS_01_OG_F4_STS
+  Id: g=2b1ed2f8fd995c05aecae8777a027d4c
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F4_STS"
+- Name: STP_MVS_01_OG_F4_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F4_STS_Co"
+- Name: STP_MVS_01_OG_F5
+  Id: g=309ffe4877c93a6c7e6253eacc52259c
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F5"
+- Name: STP_MVS_01_OG_F5_STS
+  Id: g=77c819f5008a676b6c3dac59fbdb81fa
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F5_STS"
+- Name: STP_MVS_01_OG_F5_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F5_STS_Co"
+- Name: STP_MVS_01_OG_F6
+  Id: g=924c2003090fe0a00d107dd5adb08ced
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F6"
+- Name: STP_MVS_01_OG_F6_STS
+  Id: g=a9535e15310b17cb2c4c4740c8412177
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F6_STS"
+- Name: STP_MVS_01_OG_F6_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F6_STS_Co"
+- Name: STP_MVS_01_OG_F7
+  Id: g=8a446348dd5df5ab5dbb102f2f1f340c
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F7"
+- Name: STP_MVS_01_OG_F7_STS
+  Id: g=ba593bdff50dee85c173650389d72cb6
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F7_STS"
+- Name: STP_MVS_01_OG_F7_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F7_STS_Co"
+- Name: STP_MVS_01_OG_F8
+  Id: g=3448948ae8e891909507679791321b0d
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F8"
+- Name: STP_MVS_01_OG_F8_STS
+  Id: g=e56f55c0e882855d03df751c8c62843f
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F8_STS"
+- Name: STP_MVS_01_OG_F8_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_MVS_01_OG_F8_STS_Co"
+- Name: STP_SWB_01_INF1
+  Id: g=d89f3d91c060beef431f0ceeccff6c70
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_INF1"
+- Name: STP_SWB_01_OG_3F
+  Id: g=eee7c449851d7cc2fcbda1e2fccbe3f7
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_OG_3F"
+- Name: STP_SWB_01_INF1_STS
+  Id: g=e5e78351a5273e9eb98308fe30881a48
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_INF1_STS"
+- Name: STP_SWB_01_INF1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_INF1_STS_Co"
+- Name: STP_SWB_01_OG_3F1
+  Id: g=aa3e77871475c58efe128b1ec2927809
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_OG_3F1"
+- Name: STP_SWB_01_OG_3F1_STS
+  Id: g=3f6ef4705a75d0b023fe935a4d8ecdce
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_OG_3F1_STS"
+- Name: STP_SWB_01_OG_3F1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_01_OG_3F1_STS_Co"
+- Name: STP_SWB_02_INF1
+  Id: g=f4c7a43c817a50242bdba7be98a27cf1
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_INF1"
+- Name: STP_SWB_02_INF1_STS
+  Id: g=c12afbd348576099555b416eb0edd73f
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_INF1_STS"
+- Name: STP_SWB_02_INF1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_INF1_STS_Co"
+- Name: STP_SWB_02_OG_2F
+  Id: g=3cfe8fab8636bb3d83458a3105d895a1
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_2F"
+- Name: STP_SWB_02_OG_2F_STS
+  Id: g=c84483bf0f9e2ffb5a9f39c045a2bc1d
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_2F_STS"
+- Name: STP_SWB_02_OG_2F_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_2F_STS_Co"
+- Name: STP_SWB_02_OG_3F1
+  Id: g=fec443e658be0ad3c9a3ce8e95097a74
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F1"
+- Name: STP_SWB_02_OG_3F1_STS
+  Id: g=1dd32e7efd6255398f3a986df9fb2206
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F1_STS"
+- Name: STP_SWB_02_OG_3F1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F1_STS_Co"
+- Name: STP_SWB_02_OG_3F2
+  Id: g=c6560772003a683a3e9dea023a8ecf28
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F2"
+- Name: STP_SWB_02_OG_3F2_STS
+  Id: g=6fbc9d88fba59784092772f60a8d1e80
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F2_STS"
+- Name: STP_SWB_02_OG_3F2_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_3F2_STS_Co"
+- Name: STP_SWB_02_OG_4F1
+  Id: g=007a74146864c4e8ec5c2a29a6f31319
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F1"
+- Name: STP_SWB_02_OG_4F1_STS
+  Id: g=5875d7ecdef7cbfb3a263f03dcad01a5
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F1_STS"
+- Name: STP_SWB_02_OG_4F1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F1_STS_Co"
+- Name: STP_SWB_02_OG_4F2
+  Id: g=c44f0d9876fba19e3e63fa904d26c7da
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F2"
+- Name: STP_SWB_02_OG_4F2_STS
+  Id: g=ae00866cc0a9bed7ebc7b9c6ba3f13c2
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F2_STS"
+- Name: STP_SWB_02_OG_4F2_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_4F2_STS_Co"
+- Name: STP_SWB_02_OG_5F1
+  Id: g=593786ad308c416e473d92326b586266
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_5F1"
+- Name: STP_SWB_02_OG_5F1_STS
+  Id: g=ae08b87b2d693e30d4f4f6827909b88e
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_5F1_STS"
+- Name: STP_SWB_02_OG_5F1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_02_OG_5F1_STS_Co"
+- Name: STP_SWB_03_INF1
+  Id: g=59beb514d79df76592fee6fb4c42d517
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_03_INF1"
+- Name: STP_SWB_03_INF1_STS
+  Id: g=0b7358fee5623b94a0650539a4aae101
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_03_INF1_STS"
+- Name: STP_SWB_03_INF1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_03_INF1_STS_Co"
+- Name: STP_SWB_04_INF1
+  Id: g=8875ab2ca25fd64d14602ec0ef841bd3
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_04_INF1"
+- Name: STP_SWB_04_INF1_STS
+  Id: g=f3d1b0d2c98a064e7031fd548557dc64
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_04_INF1_STS"
+- Name: STP_SWB_04_INF1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_04_INF1_STS_Co"
+- Name: STP_SWB_05_INF1
+  Id: g=6ac9bdf86ea23960bd93e833e2037905
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_05_INF1"
+- Name: STP_SWB_05_INF1_STS
+  Id: g=b9375fc1115bca4dfc191a44d2110b75
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_05_INF1_STS"
+- Name: STP_SWB_05_INF1_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "STP_SWB_05_INF1_STS_Co"

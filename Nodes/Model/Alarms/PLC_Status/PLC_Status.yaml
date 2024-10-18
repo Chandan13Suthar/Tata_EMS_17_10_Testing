@@ -1,0 +1,31 @@
+Name: PLC_Status
+Type: FolderType
+Children:
+- Name: 33KVPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Utility1PLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Utility2PLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: PaintshopPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: SPPPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: BodyShopPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: StampingPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: TCFPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: AdminPLCStatus
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

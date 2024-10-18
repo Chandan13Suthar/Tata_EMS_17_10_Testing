@@ -1,0 +1,22 @@
+Name: Area
+Type: FolderType
+Children:
+- File: Zone/Zone.yaml
+- Name: Alarm1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Alarm2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Alarm3
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Alarm4
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Alarm5
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: Alarm6
+  Type: BaseDataVariableType
+  DataType: Boolean

@@ -1,0 +1,31 @@
+Name: VariableTypes
+Type: FolderType
+Children:
+- Name: kv33_demo
+  Id: g=a30f77f0a56dbd9f98c078b0fd1e74d3
+  Type: MicroControllerTag
+  DataType: Double
+  ValueRank: OneDimension
+  ArrayDimensions: [20]
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "kv33_demo"
+- Name: Demo_STS
+  Id: g=eb34617c36e710ec118edba1305fe2c4
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Demo_STS"
+- Name: Demo_STS_Co
+  Type: MicroControllerTag
+  DataType: Boolean
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Demo_STS_Co"

@@ -1,0 +1,27 @@
+Name: HomePageTags
+Type: FolderType
+Children:
+- File: Consumption/Consumption.yaml
+- File: ElectricityConsumptionHistory/ElectricityConsumptionHistory.yaml
+- File: TODEnergyConsumption/TODEnergyConsumption.yaml
+- Name: Frequency
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: PowerFactor
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Demand
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TodayConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TodayCost
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: MonthlyConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: MonthlyCost
+  Type: BaseDataVariableType
+  DataType: Float

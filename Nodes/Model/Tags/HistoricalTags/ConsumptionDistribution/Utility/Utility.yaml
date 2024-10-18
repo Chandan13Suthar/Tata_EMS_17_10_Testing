@@ -1,0 +1,18 @@
+Name: Utility
+Type: FolderType
+Children:
+- Name: Consumption
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Target
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: YearLowest
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: MonthLowest
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: Average
+  Type: BaseDataVariableType
+  DataType: Float

@@ -1,0 +1,12 @@
+Name: HistoDashboardResult
+Type: FolderType
+Children:
+- Name: TotalConsumption
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: AvgPf
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: AvgFreq
+  Type: BaseDataVariableType
+  DataType: Float

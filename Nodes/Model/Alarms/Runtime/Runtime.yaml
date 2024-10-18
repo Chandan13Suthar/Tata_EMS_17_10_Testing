@@ -1,0 +1,15 @@
+Name: Runtime
+Type: FolderType
+Children:
+- Name: RtAlarmVar1
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: RtAlarmVar2
+  Type: BaseDataVariableType
+  DataType: Boolean
+- Name: RtAlarmVar3
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: RtAlarmVar4
+  Type: BaseDataVariableType
+  DataType: Int32

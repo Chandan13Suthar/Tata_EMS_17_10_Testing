@@ -1,0 +1,810 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: EmbeddedDatabase
+  Id: g=9a82e5e71d1a3a634a88a77ec729daef
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: EMSAlarmsEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTime
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Time
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+        - Name: Parameter
+          Type: StoreColumn
+          DataType: String
+        - Name: Severity
+          Type: StoreColumn
+          DataType: UInt16
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: ConfirmedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: EnabledState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: ConditionName
+          Type: StoreColumn
+          DataType: String
+        - Name: ActiveState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: AckedState_Id
+          Type: StoreColumn
+          DataType: Boolean
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_hi-IN'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_gu-IN'
+          Type: StoreColumn
+          DataType: String
+        - Name: 'Message_en-US'
+          Type: StoreColumn
+          DataType: String
+  - Class: Reference
+    Target: ns=29;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
+  - Name: InsertValues
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: InsertRandomValues
+- Name: ODBCDatabase
+  Id: g=66c4cc35201cdd85c026d878f8998054
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: HomePage
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Active_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Power_Total_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Power_Total_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Active_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Pf
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RY
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YB
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BR
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Date
+          Type: StoreColumn
+          DataType: String
+        - Name: Date1
+          Type: StoreColumn
+          DataType: String
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+        - Name: Production
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Target1
+          Type: StoreColumn
+          DataType: Float
+    - Name: DailyConsumptionAgg
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BR
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YB
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RY
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Active_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Active_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+        - Name: Month
+          Type: StoreColumn
+          DataType: DateString
+          Value: "Jan 1, 1601, 12:00:00 AM"
+        - Name: MonthYear
+          Type: StoreColumn
+          DataType: DateString
+          Value: "Jan 1, 1601, 12:00:00 AM"
+        - Name: LocalDate
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Target
+          Type: StoreColumn
+          DataType: Float
+        - Name: Production
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Year
+          Type: StoreColumn
+          DataType: DateString
+          Value: "Jan 1, 1601, 12:00:00 AM"
+    - Name: DailyConsumption
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+        - Name: Active_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Active_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Apparent_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Reactive_Energy_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RY
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YB
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BR
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+        - Name: LocalDate
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: DateHour
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Target
+          Type: StoreColumn
+          DataType: Float
+        - Name: Production
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Target1
+          Type: StoreColumn
+          DataType: Float
+    - Name: DailyJaceDataLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: LocalDate
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Day
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Month
+          Type: StoreColumn
+          DataType: DateString
+        - Name: MonthYear
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Year
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LL
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_LN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Target
+          Type: StoreColumn
+          DataType: Float
+        - Name: Production
+          Type: StoreColumn
+          DataType: Int32
+        - Name: Active_Power_Total
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_Current
+          Type: StoreColumn
+          DataType: Float
+    - Name: HourlyJaceDataLogger
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: LocalDate
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Day
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Month
+          Type: StoreColumn
+          DataType: DateString
+        - Name: MonthYear
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Hour
+          Type: StoreColumn
+          DataType: DateString
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Consumption
+          Type: StoreColumn
+          DataType: Float
+        - Name: Avg_PF
+          Type: StoreColumn
+          DataType: Float
+        - Name: Frequency
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_RN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_YN
+          Type: StoreColumn
+          DataType: Float
+        - Name: Voltage_BN
+          Type: StoreColumn
+          DataType: Float
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "Password@01"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
+  - Name: DSN
+    Type: PropertyType
+    DataType: String
+    Value: "FT Optix"
+- Name: EDB_AuditTrail
+  Id: g=63c3b906ebd2e068dca0afc9e3a66d16
+  Type: SQLiteStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: SigningEventLogger
+      Type: SQLiteStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: LocalTimeStamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: SourceName
+          Type: StoreColumn
+          DataType: String
+        - Name: Message
+          Type: StoreColumn
+          DataType: String
+        - Name: WorkflowType
+          Type: StoreColumn
+          DataType: String
+        - Name: SignResult
+          Type: StoreColumn
+          DataType: String
+        - Name: ClientUserId
+          Type: StoreColumn
+          DataType: String
+        - Name: ClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: EventType
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserNote
+          Type: StoreColumn
+          DataType: String
+        - Name: SecondClientUserId
+          Type: StoreColumn
+          DataType: String
+  - Class: Reference
+    Target: ns=29;i=30
+    Direction: Forward
+  - Class: Reference
+    Target: ns=29;i=33
+    Direction: Forward
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=11;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=59
+    Direction: Forward
