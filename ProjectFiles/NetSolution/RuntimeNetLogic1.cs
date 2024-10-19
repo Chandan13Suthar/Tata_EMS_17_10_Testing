@@ -46,8 +46,10 @@ public class RuntimeNetLogic1 : BaseNetLogic
         button1Variable = owner.Button1Variable;
         datefromVariable = owner.DatefromVariable;
         datetoVariable = owner.DatetoVariable;
-        timerangeVariable = owner.TimeRangeVariable;
+     //   timerangeVariable = owner.TimeRangeVariable;
         durationVariable = owner.DurationVariable;
+        dateto1Variable = owner.Dateto1Variable;
+        datefrom1Variable = owner.Datefrom1Variable;
 
         //periodicTask = new PeriodicTask(IncrementDecrementTask, 2000 , LogicObject);
         //periodicTask.Start();
@@ -72,7 +74,9 @@ public class RuntimeNetLogic1 : BaseNetLogic
         bool button1 = button1Variable.Value;
         DateTime datefrom = datefromVariable.Value;
         DateTime dateto = datetoVariable.Value;
-         string timerange = timerangeVariable.Value;
+        DateTime from1 = datefrom1Variable.Value;
+        DateTime to1 = dateto1Variable.Value;
+       //  string timerange = timerangeVariable.Value;
 
 
         var project = FTOptix.HMIProject.Project.Current;
@@ -107,14 +111,34 @@ public class RuntimeNetLogic1 : BaseNetLogic
         object[,] resultSet8;
         string[] header8;
 
+      
+
         //////////////////////////////////////////////////////////////////////////////////For Jace Selection////////////////////////////////////////////////////////////////////////////
         if (button == true)
         {
             string new123 = datefrom.ToString("yyyy-MMM-dd");
             string new321 = dateto.ToString("yyyy-MMM-dd");
+     
             string jace1 = jace.ToString();
-            TimeSpan difference = dateto - datefrom;
-            timerange = difference.ToString(@"dd\:hh\:mm\:ss"); // ya aap apne hisab se date format mein set karein
+            TimeSpan difference;
+            var testfrom = datefrom.ToString("yyyy-MMM-dd 00:00:00");
+            var testto = dateto.ToString("yyyy-MMM-dd 23:59:59");
+
+            DateTime dateto1 = DateTime.Parse(testto);
+            DateTime datefrom1 = DateTime.Parse(testfrom);
+
+            if (dateto.Date == datefrom.Date) // If the dates are the same
+            {
+                difference = new TimeSpan(23, 59, 59); // Set the time difference to 23:59:59
+            }
+            else
+            {
+                difference = dateto - datefrom + new TimeSpan(23, 59, 59); // Calculate the actual time difference
+            }
+
+            var diff = difference.TotalMilliseconds;
+            Project.Current.GetVariable("Model/HistoDashboardInstance/TimeRange").Value = diff;
+            // ToString(@"dd\:hh\:mm\:ss"); // ya aap apne hisab se date format mein set karein
 
 
             string query1 = $"SELECT  SUM(Consumption) FROM DailyJaceDataLogger WHERE Timestamp  BETWEEN '" + new123 + " 00:00:00' AND '" + new321 + " 23:59:59' AND Jace = '"+ jace1 + "' ";
@@ -183,8 +207,10 @@ public class RuntimeNetLogic1 : BaseNetLogic
             avgpfVariable.Value = avgpf;
             avgfrequencyVariable.Value = avgfrequency;
             consumptionVariable.Value = consumption;
-            timerangeVariable.Value = timerange;
+          //  timerangeVariable.Value = timerange;
             buttonVariable.Value = button;
+            dateto1Variable.Value = dateto1;
+            datefrom1Variable.Value = datefrom1;
 
 
 
@@ -197,9 +223,27 @@ public class RuntimeNetLogic1 : BaseNetLogic
             string new645 = dateto.ToString("yyyy-MM-dd");
             string meter1 = meter.ToString();
             string jace1 = jace.ToString();
-            TimeSpan difference = dateto - datefrom;
-            timerange = difference.ToString(@"dd\:hh\:mm\:ss");
-           // string timerange = difference.ToString(@"dd\:hh\:mm\:ss");// ya aap apne hisab se date format mein set karein
+            TimeSpan difference;
+           var testfrom = datefrom.ToString("yyyy-MMM-dd 00:00:00");
+            var testto = dateto.ToString("yyyy-MMM-dd 23:59:59");
+
+            DateTime dateto1 = DateTime.Parse(testto);
+            DateTime datefrom1 = DateTime.Parse(testfrom);
+
+
+            if (dateto.Date == datefrom.Date) // If the dates are the same
+            {
+                difference = new TimeSpan(23, 59, 59); // Set the time difference to 23:59:59
+            }
+            else
+            {
+                difference = dateto - datefrom + new TimeSpan(23, 59, 59); // Calculate the actual time difference
+            }
+
+            var diff = difference.TotalMilliseconds;
+            Project.Current.GetVariable("Model/HistoDashboardInstance/TimeRange").Value = diff;
+
+            // string timerange = difference.ToString(@"dd\:hh\:mm\:ss");// ya aap apne hisab se date format mein set karein
 
             string query5 = $"SELECT  SUM(Consumption) FROM DailyConsumption WHERE Timestamp  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
             //string query6 = $"SELECT  MIN(Consumption) FROM DailyConsumption  WHERE Date  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace1 + "'  AND Meter = '" + meter1 + "' ";
@@ -265,8 +309,10 @@ public class RuntimeNetLogic1 : BaseNetLogic
             avgpfVariable.Value = avgpf;
             avgfrequencyVariable.Value = avgfrequency;
             consumptionVariable.Value = consumption;
-            timerangeVariable.Value = timerange;
+          //  timerangeVariable.Value = timerange;
             button1Variable.Value = button1;
+            dateto1Variable.Value = dateto1;
+            datefrom1Variable.Value = datefrom1;
 
             
 
@@ -290,5 +336,7 @@ public class RuntimeNetLogic1 : BaseNetLogic
     private IUAVariable datetoVariable;
     private IUAVariable timerangeVariable;
     private IUAVariable durationVariable;
+    private IUAVariable dateto1Variable;
+    private IUAVariable datefrom1Variable;
     private PeriodicTask periodicTask;
 }

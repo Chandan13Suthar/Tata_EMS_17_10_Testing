@@ -10,6 +10,7 @@ using FTOptix.OPCUAServer;
 using FTOptix.UI;
 using FTOptix.Alarm;
 using FTOptix.RAEtherNetIP;
+using FTOptix.HMIProject;
 #endregion
 
 public class ClockLogic : BaseNetLogic {
@@ -46,6 +47,8 @@ public class ClockLogic : BaseNetLogic {
             startTime = startTime.AddDays(-1);
             endTime = endTime.AddDays(-1);
         }
+
+
         LogicObject.GetVariable("TodayStartTime").Value = startTime;
         LogicObject.GetVariable("TodayEndTime").Value = endTime;
         LogicObject.GetVariable("TodayDate").Value = todaydate;

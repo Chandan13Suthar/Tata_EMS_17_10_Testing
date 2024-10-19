@@ -50,9 +50,20 @@ public class CurrentDateTimeFormatted : BaseNetLogic
 		String dateFor = "DDMMYYYY";
 		String DateFormatted = "01/02/2023";
 		String TimeFormatted = "00:00:00";
+        DateTime currentTime = DateTime.Now;
+        DateTime todaydate = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 0, 0, 0);
 
-		//Month formatting
-		if (MonthVar < 10)
+        DateTime time1date = Project.Current.GetVariable("Model/DailyReportDateTO").Value ;
+        Project.Current.GetVariable("Model/Reports/Daily Date To").Value = time1date.Add(new TimeSpan(23, 59, 59));
+
+
+        DateTime time2date = Project.Current.GetVariable("Model/AlarmReportDateTO").Value;
+        Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = time2date.Add(new TimeSpan(23, 59, 59));
+
+
+
+        //Month formatting
+        if (MonthVar < 10)
         {
             stMonth = "0" + MonthVar;
         }
@@ -97,7 +108,23 @@ public class CurrentDateTimeFormatted : BaseNetLogic
             stSec = SecVar.ToString();
         }
 
-		String DateOpt = Project.Current.GetVariable("Model/DateTime/DateOperator").Value;
+
+        if (HourVar == 00 && MinVar == 05 && SecVar == 00)
+        {
+            Project.Current.GetVariable("Model/Histo Dashboard/Datefrom").Value = todaydate;
+            Project.Current.GetVariable("Model/Histo Dashboard/Dateto").Value = todaydate;
+            Project.Current.GetVariable("Model/Comparision_Dashboard/Datefrom").Value = todaydate;
+            Project.Current.GetVariable("Model/Comparision_Dashboard/Dateto").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/Third Report/Date").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/DailyDateFrom").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/Daily Date To").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/Third Report/Date1").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/Forth Report/Datefrom").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = todaydate;
+
+
+        }
+        String DateOpt = Project.Current.GetVariable("Model/DateTime/DateOperator").Value;
 		String TimeOpt = Project.Current.GetVariable("Model/DateTime/TimeOperator").Value;
 
 		// Date Formatting

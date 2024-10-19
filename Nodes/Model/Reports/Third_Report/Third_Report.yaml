@@ -7,6 +7,7 @@ Children:
   DataType: String
   Value: "D:\\ConsumptionReport\\DistributionReport.pdf"
 - Name: Date
+  Id: g=3564cdf5e5dfef8193ff37aa1a08403b
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "2024-09-01T00:00:00.0000000"
@@ -25,6 +26,7 @@ Children:
   Type: BaseDataVariableType
   DataType: Boolean
 - Name: Date1
+  Id: g=ebf041e9bb3ce8992879e862b49e943c
   Type: BaseDataVariableType
   DataType: DateTime
 - Name: Info

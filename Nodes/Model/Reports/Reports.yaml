@@ -18,6 +18,7 @@ Children:
   DataType: String
   Value: "D:\\Daily_Energy_Reports\\Daily_Consumption_Report.pdf"
 - Name: DailyDateFrom
+  Id: g=4591761a690a7561e41fa28f9cf3f9fb
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "2024-01-10T00:00:00.0000000"

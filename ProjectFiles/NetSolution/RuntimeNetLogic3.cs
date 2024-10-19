@@ -54,10 +54,12 @@ public class RuntimeNetLogic3 : BaseNetLogic
         datefromVariable = owner.DatefromVariable;
         datetoVariable = owner.DatetoVariable;
         timerangeVariable = owner.TimeRangeVariable;
-       // durationVariable = owner.DurationVariable;
+        dateto1Variable = owner.Dateto1Variable;
+        datefrom1Variable = owner.Datefrom1Variable;
+        // durationVariable = owner.DurationVariable;
 
-       // periodicTask = new PeriodicTask(IncrementDecrementTask, 5000, LogicObject);
-       // periodicTask.Start();
+        // periodicTask = new PeriodicTask(IncrementDecrementTask, 5000, LogicObject);
+        // periodicTask.Start();
     }
 
     public override void Stop()
@@ -87,6 +89,8 @@ public class RuntimeNetLogic3 : BaseNetLogic
         DateTime datefrom = datefromVariable.Value;
         DateTime dateto = datetoVariable.Value;
         string timerange = timerangeVariable.Value;
+        DateTime from1 = datefrom1Variable.Value;
+        DateTime to1 = dateto1Variable.Value;
 
 
         var project = FTOptix.HMIProject.Project.Current;
@@ -155,8 +159,26 @@ public class RuntimeNetLogic3 : BaseNetLogic
             string new321 = dateto.ToString("yyyy-MM-dd");
             string jace3 = jace1.ToString();
             string jace4 = jace2.ToString();
-            TimeSpan difference = dateto - datefrom;
-            timerange = difference.ToString(@"dd\:hh\:mm\:ss");
+          //  TimeSpan difference = dateto - datefrom;
+         //   timerange = difference.ToString(@"dd\:hh\:mm\:ss");
+            TimeSpan difference;
+            var testfrom = datefrom.ToString("yyyy-MMM-dd 00:00:00");
+            var testto = dateto.ToString("yyyy-MMM-dd 23:59:59");
+
+            DateTime dateto1 = DateTime.Parse(testto);
+            DateTime datefrom1 = DateTime.Parse(testfrom);
+
+            if (dateto.Date == datefrom.Date) // If the dates are the same
+            {
+                difference = new TimeSpan(23, 59, 59); // Set the time difference to 23:59:59
+            }
+            else
+            {
+                difference = dateto - datefrom + new TimeSpan(23, 59, 59); // Calculate the actual time difference
+            }
+
+            var diff = difference.TotalMilliseconds;
+            Project.Current.GetVariable("Model/ComparisionDashboardInstance/TimeRange").Value = diff;
 
 
 
@@ -285,7 +307,8 @@ public class RuntimeNetLogic3 : BaseNetLogic
             consumption2Variable.Value = consumption2;
             timerangeVariable.Value = timerange;
             button1Variable.Value = button1;
-
+            dateto1Variable.Value = dateto1;
+            datefrom1Variable.Value = datefrom1;
 
 
 
@@ -301,9 +324,26 @@ public class RuntimeNetLogic3 : BaseNetLogic
             string meter6 = meter2.ToString();
             string jace5 = jace1.ToString();
             string jace6 = jace2.ToString();
-            TimeSpan difference = dateto - datefrom;
-            timerange = difference.ToString(@"dd\:hh\:mm\:ss");
+            //  TimeSpan difference = dateto - datefrom;
+            //  timerange = difference.ToString(@"dd\:hh\:mm\:ss");
+            TimeSpan difference;
+            var testfrom = datefrom.ToString("yyyy-MMM-dd 00:00:00");
+            var testto = dateto.ToString("yyyy-MMM-dd 23:59:59");
 
+            DateTime dateto1 = DateTime.Parse(testto);
+            DateTime datefrom1 = DateTime.Parse(testfrom);
+
+            if (dateto.Date == datefrom.Date) // If the dates are the same
+            {
+                difference = new TimeSpan(23, 59, 59); // Set the time difference to 23:59:59
+            }
+            else
+            {
+                difference = dateto - datefrom + new TimeSpan(23, 59, 59); // Calculate the actual time difference
+            }
+
+            var diff = difference.TotalMilliseconds;
+            Project.Current.GetVariable("Model/ComparisionDashboardInstance/TimeRange").Value = diff;
             ////////////////////////////////////////////////////////////////////////// For Meter 1 ////////////////////////////////////////////////////////////////////////////////////// 
 
             string query9 = $"SELECT  SUM(Consumption) FROM DailyConsumption WHERE Timestamp  BETWEEN '" + new456 + " 00:00:00' AND '" + new645 + " 23:59:59' AND Jace =  '" + jace5 + "'  AND Meter = '" + meter5 + "' ";
@@ -439,7 +479,8 @@ public class RuntimeNetLogic3 : BaseNetLogic
             consumption2Variable.Value = consumption2;
             timerangeVariable.Value = timerange;
             button2Variable.Value = button2;
-
+            dateto1Variable.Value = dateto1;
+            datefrom1Variable.Value = datefrom1;
 
         }
 
@@ -452,6 +493,8 @@ public class RuntimeNetLogic3 : BaseNetLogic
     private IUAVariable datefromVariable;
     private IUAVariable datetoVariable;
     private IUAVariable timerangeVariable;
+    private IUAVariable dateto1Variable;
+    private IUAVariable datefrom1Variable;
     private IUAVariable durationVariable;
     private IUAVariable jace1Variable;
     private IUAVariable jace2Variable;
