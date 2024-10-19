@@ -279,7 +279,7 @@ Children:
     - Name: Path
       Type: BaseDataVariableType
       DataType: ResourceUri
-      Value: "ns=36;%PROJECTDIR%/imgs/Screenshot (118).png"
+      Value: "ns=36;%PROJECTDIR%/imgs/Screenshot_(270)-transformed.png"
     - Name: Width
       Type: BaseVariableType
       DataType: Size

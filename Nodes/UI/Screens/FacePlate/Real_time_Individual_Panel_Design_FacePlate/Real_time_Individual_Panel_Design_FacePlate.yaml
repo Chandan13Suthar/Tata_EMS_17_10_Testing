@@ -10185,11 +10185,12 @@ Children:
       Type: BaseDataVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 16.0
+      Value: 13.0
     - Name: LeftMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
+      Value: -14.0
     - Name: TextColor
       Type: BaseDataVariableType
       DataType: Color
@@ -10208,12 +10209,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 9.0
+      Value: 6.0
     - Name: FontWeight
       Type: BaseDataVariableType
       DataType: FontWeightEnum
       ModellingRule: Optional
-      Value: 700
+      Value: 800
   - Name: MeterAlias1
     Type: Alias
     DataType: NodeId

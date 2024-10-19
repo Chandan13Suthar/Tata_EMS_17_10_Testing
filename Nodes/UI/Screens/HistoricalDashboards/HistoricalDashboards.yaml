@@ -727,6 +727,70 @@ Children:
                     DataType: Size
                     ModellingRule: Optional
                     Value: 55.0
+                - Name: Label2
+                  Type: Label
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                  - Name: Width
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 106.0
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 26.0
+                  - Name: TextHorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: TextHorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 1
+                  - Name: TextVerticalAlignment
+                    Type: BaseVariableType
+                    DataType: TextVerticalAlignment
+                    ModellingRule: Optional
+                    Value: 1
+                  - Name: FontSize
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 18.0
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 115.0
+                  - Name: FontWeight
+                    Type: BaseDataVariableType
+                    DataType: FontWeightEnum
+                    ModellingRule: Optional
+                    Value: 700
+                  - Name: FontFamily
+                    Type: BaseDataVariableType
+                    DataType: Font
+                    ModellingRule: Optional
+                  - Name: TextColor
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#000000"
+                  - Name: HorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: HorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 3
               - Name: Rectangle2
                 Type: Rectangle
                 Children:
@@ -982,6 +1046,70 @@ Children:
                     DataType: Size
                     ModellingRule: Optional
                     Value: 55.0
+                - Name: Label2
+                  Type: Label
+                  Children:
+                  - Name: Text
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                  - Name: Width
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 105.0
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 21.0
+                  - Name: TextHorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: TextHorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 1
+                  - Name: TextVerticalAlignment
+                    Type: BaseVariableType
+                    DataType: TextVerticalAlignment
+                    ModellingRule: Optional
+                    Value: 1
+                  - Name: FontSize
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 18.0
+                  - Name: LeftMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                  - Name: TopMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 114.0
+                  - Name: FontWeight
+                    Type: BaseDataVariableType
+                    DataType: FontWeightEnum
+                    ModellingRule: Optional
+                    Value: 700
+                  - Name: FontFamily
+                    Type: BaseDataVariableType
+                    DataType: Font
+                    ModellingRule: Optional
+                  - Name: TextColor
+                    Type: BaseDataVariableType
+                    DataType: Color
+                    ModellingRule: Optional
+                    Value: "#000000"
+                  - Name: HorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: HorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 3
               - Name: Rectangle3
                 Type: Rectangle
                 Children:
@@ -13536,8 +13664,11 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
-                      ModellingRule: Optional
-                      Value: {"LocaleId":"en-US","Text":"MM/DD/YYYY"}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Datefrom"
                     - Name: Width
                       Type: BaseVariableType
                       DataType: Size
@@ -13785,8 +13916,11 @@ Children:
                     - Name: Text
                       Type: BaseDataVariableType
                       DataType: LocalizedText
-                      ModellingRule: Optional
-                      Value: {"LocaleId":"en-US","Text":"MM/DD/YYYY"}
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Dateto"
                     - Name: Width
                       Type: BaseVariableType
                       DataType: Size
@@ -51512,7 +51646,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Selection_2_Jace@Value"
+                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -51557,6 +51691,7 @@ Children:
               Type: BaseDataVariableType
               DataType: Boolean
               ModellingRule: Optional
+              Value: true
           - Name: S2_TotalConsumption7
             Type: Label
             Children:

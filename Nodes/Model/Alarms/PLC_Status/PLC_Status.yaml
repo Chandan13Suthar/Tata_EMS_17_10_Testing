@@ -28,4 +28,3 @@ Children:
 - Name: AdminPLCStatus
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: true

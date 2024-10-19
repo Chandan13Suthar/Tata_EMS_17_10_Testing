@@ -1,0 +1,44 @@
+Name: PRoduction_And_Target
+Id: g=37079f16489228c94cdc4010fa00ddff
+Type: FolderType
+Children:
+- Name: Target33KV
+  Id: g=cdd1e80814b212aadb1ef8f4745a3057
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetUtility
+  Id: g=773a53bc1f43336d2c75864762c4d83e
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetPumpRoom
+  Id: g=335da4910963b84ddcb0134675da65b7
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetPaintShop
+  Id: g=ea81a59e81ed836efed9e29a13a27712
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetBodyshop
+  Id: g=fe8455023661519fee9ae22e409ca4c6
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetTCF
+  Id: g=40c38e2ecc6f8a7d34f38ac885b47e6d
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetStamping
+  Id: g=8262cc674eee0c7ce0e6b6bb4b286c33
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetAdmin
+  Id: g=e07f523800bd9a521140878a0371a855
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: TargetSPP
+  Id: g=0a1c4c6bff0e030e3c7a1b8bbb5ebcf1
+  Type: BaseDataVariableType
+  DataType: Float
+- Name: ProductionCount
+  Id: g=a40da2d8cc072fa7609ac773f5a98eee
+  Type: BaseDataVariableType
+  DataType: Int32

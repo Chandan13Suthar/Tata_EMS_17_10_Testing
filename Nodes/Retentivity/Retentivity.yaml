@@ -85,6 +85,18 @@ Children:
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
+    - Name: Node3
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/HomePageHistogram/HomePage2/PRoduction_And_Target"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
   - Name: WriteDelay
     Type: BaseDataVariableType
     DataType: Duration

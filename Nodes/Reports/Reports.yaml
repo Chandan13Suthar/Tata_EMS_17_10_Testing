@@ -988,7 +988,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"TATA MOTORS ELECTRIC MOBILITY LIMITED"}
+        Value: {"LocaleId":"en-US","Text":"TATA PASSENGER ELECTRIC MOBILITY LIMITED"}
       - Name: LeftMargin
         Type: BaseDataVariableType
         DataType: Size
@@ -3140,6 +3140,9 @@ Children:
       - Name: SortOrder
         Type: BaseDataVariableType
         DataType: SortOrderEnum
+      - Name: AllowDeselection
+        Type: BaseDataVariableType
+        DataType: Boolean
     - Name: VerticalGap
       Type: BaseDataVariableType
       DataType: Size
@@ -5152,7 +5155,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"TATA MOTORS ELECTRIC MOBILITY LIMITED"}
+        Value: {"LocaleId":"en-US","Text":"TATA PASSENGER ELECTRIC MOBILITY LIMITED"}
       - Name: LeftMargin
         Type: BaseDataVariableType
         DataType: Size
@@ -18615,7 +18618,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"TATA MOTORS ELECTRIC MOBILITY LIMITED"}
+        Value: {"LocaleId":"en-US","Text":"TATA PASSENGER ELECTRIC MOBILITY LIMITED"}
       - Name: LeftMargin
         Type: BaseDataVariableType
         DataType: Size
@@ -22158,7 +22161,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"TATA MOTORS ELECTRIC MOBILITY LIMITED"}
+        Value: {"LocaleId":"en-US","Text":"TATA PASSENGER ELECTRIC MOBILITY LIMITED"}
       - Name: LeftMargin
         Type: BaseDataVariableType
         DataType: Size
@@ -25765,7 +25768,7 @@ Children:
       - Name: Text
         Type: BaseDataVariableType
         DataType: LocalizedText
-        Value: {"LocaleId":"en-US","Text":"TATA MOTORS ELECTRIC MOBILITY LIMITED"}
+        Value: {"LocaleId":"en-US","Text":"TATA PASSENGER ELECTRIC MOBILITY LIMITED"}
       - Name: LeftMargin
         Type: BaseDataVariableType
         DataType: Size

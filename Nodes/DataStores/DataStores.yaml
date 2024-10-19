@@ -694,7 +694,7 @@ Children:
   - Name: DSN
     Type: PropertyType
     DataType: String
-    Value: "FT Optix"
+    Value: "FT Optix1"
 - Name: EDB_AuditTrail
   Id: g=63c3b906ebd2e068dca0afc9e3a66d16
   Type: SQLiteStore

@@ -14625,6 +14625,10 @@ Children:
             DataType: String
             ModellingRule: Optional
             Value: "Default"
+          - Name: AllowDeselection
+            Type: BaseDataVariableType
+            DataType: Boolean
+            ModellingRule: Optional
         - Name: Label2
           Type: Label
           Children:

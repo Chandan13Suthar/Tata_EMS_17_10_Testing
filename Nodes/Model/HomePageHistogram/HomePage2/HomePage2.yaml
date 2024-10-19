@@ -1009,33 +1009,6 @@ Children:
               Type: BaseVariableType
               DataType: DynamicLinkMode
               Value: 2
-- Name: Target33KV
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetUtility
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetPumpRoom
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetPaintShop
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetBodyshop
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetTCF
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetStamping
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetAdmin
-  Type: BaseDataVariableType
-  DataType: Float
-- Name: TargetSPP
-  Type: BaseDataVariableType
-  DataType: Float
 - Name: Consumption33KV
   Type: BaseDataVariableType
   DataType: Float
@@ -1239,3 +1212,4 @@ Children:
 - Name: Variable2
   Type: BaseDataVariableType
   DataType: Int32
+- File: PRoduction_And_Target/PRoduction_And_Target.yaml
