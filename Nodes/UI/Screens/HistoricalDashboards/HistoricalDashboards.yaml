@@ -584,8 +584,11 @@ Children:
                   - Name: Text
                     Type: BaseDataVariableType
                     DataType: LocalizedText
-                    ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"MM/DD/YYYY"}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
@@ -639,6 +642,10 @@ Children:
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
                     Value: 3
+                  - Name: Visible
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ModellingRule: Optional
                 - Name: CalendarPicker1
                   Type: CalendarPicker
                   Children:
@@ -903,8 +910,11 @@ Children:
                   - Name: Text
                     Type: BaseDataVariableType
                     DataType: LocalizedText
-                    ModellingRule: Optional
-                    Value: {"LocaleId":"en-US","Text":"MM/DD/YYYY"}
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
@@ -958,6 +968,10 @@ Children:
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
                     Value: 3
+                  - Name: Visible
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ModellingRule: Optional
                 - Name: CalendarPicker2
                   Type: CalendarPicker
                   Children:
@@ -1056,7 +1070,7 @@ Children:
                     - Name: DynamicLink
                       Type: DynamicLink
                       DataType: NodePath
-                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                      Value: "../../../../../KWh/HorizontalLayout1/Rectangle2/Trend2/XAxis/Window"
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
@@ -1090,7 +1104,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 114.0
+                    Value: 124.0
                   - Name: FontWeight
                     Type: BaseDataVariableType
                     DataType: FontWeightEnum
@@ -1110,6 +1124,10 @@ Children:
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
                     Value: 3
+                  - Name: Visible
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ModellingRule: Optional
               - Name: Rectangle3
                 Type: Rectangle
                 Children:
@@ -4034,12 +4052,10 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: -38.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: -6.0
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
@@ -4202,7 +4218,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4211,7 +4227,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source3
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4318,7 +4334,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4327,7 +4343,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source3
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4392,7 +4408,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4401,7 +4417,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source3
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4668,12 +4684,10 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: -30.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: -6.0
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
@@ -4836,7 +4850,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4845,7 +4859,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source2
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4910,7 +4924,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4919,7 +4933,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source2
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4984,7 +4998,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Datefrom"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom1"
                               - Name: ns=3;Source1
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -4993,7 +5007,7 @@ Children:
                                 - Name: DynamicLink
                                   Type: DynamicLink
                                   DataType: NodePath
-                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Histo Dashboard/Dateto"
+                                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto1"
                               - Name: ns=3;Source2
                                 Type: BaseDataVariableType
                                 DataType: BaseDataType
@@ -6832,10 +6846,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../MaxConsumption3/Variable3"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -6905,7 +6968,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 100.0
+                    Value: 50.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -7046,10 +7109,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -8921,10 +9033,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../MaxConsumption3/Variable3"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -8993,7 +9154,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 100.0
+                    Value: 50.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -9130,10 +9291,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -11029,10 +11239,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "../../../../../../MaxConsumption3/Variable3"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -11101,7 +11360,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 100.0
+                    Value: 50.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -11238,10 +11497,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Datefrom"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/Dateto"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/HistoDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -26397,10 +26705,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -26691,10 +27048,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:30.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -26967,10 +27373,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:30.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -27242,10 +27697,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -36409,10 +36913,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -36668,10 +37221,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -36918,10 +37520,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -37167,10 +37818,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -46088,10 +46788,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -46397,10 +47146,59 @@ Children:
                       DataType: Duration
                       Value: "0:00:00:5.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -46697,10 +47495,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean
@@ -46950,10 +47797,59 @@ Children:
                       DataType: Duration
                       Value: "1:00:00:0.0000000"
                       Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                      - Name: ConditionalConverter1
+                        Type: ConditionalConverter
+                        Children:
+                        - Name: Condition
+                          Type: BaseDataVariableType
+                          DataType: Boolean
+                          ReferenceType: HasSource
+                          Children:
+                          - Name: ExpressionEvaluator1
+                            Type: ExpressionEvaluator
+                            Children:
+                            - Name: Expression
+                              Type: BaseDataVariableType
+                              DataType: String
+                              ReferenceType: HasParameter
+                              ModellingRule: Optional
+                              Value: "{0} == {1}"
+                            - Name: ns=3;Source0
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Datefrom1"
+                            - Name: ns=3;Source1
+                              Type: BaseDataVariableType
+                              DataType: BaseDataType
+                              ReferenceType: HasSource
+                              Children:
+                              - Name: DynamicLink
+                                Type: DynamicLink
+                                DataType: NodePath
+                                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/Dateto1"
+                        - Name: TrueValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/OneDayTime"
+                        - Name: FalseValue
+                          Type: BaseDataVariableType
+                          DataType: BaseDataType
+                          ReferenceType: HasParameter
+                          Children:
+                          - Name: DynamicLink
+                            Type: DynamicLink
+                            DataType: NodePath
+                            Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
                     - Name: Interactive
                       Type: BaseDataVariableType
                       DataType: Boolean

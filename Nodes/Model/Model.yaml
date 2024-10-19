@@ -2660,12 +2660,18 @@ Children:
     Value: {"LocaleId":"en-US","Text":"For Histo Dashboard"}
   - Name: TimeRange
     Type: BaseDataVariableType
-    DataType: TimeString
-    Value: "00:24:00:00"
+    DataType: Duration
+    Value: "0:23:59:59.0000000"
   - Name: Duration
     Type: BaseDataVariableType
     DataType: Duration
     Value: "0:00:24:0.0000000"
+  - Name: Dateto1
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Datefrom1
+    Type: BaseDataVariableType
+    DataType: DateTime
 - Name: HistoDashboard
   Id: g=c92c97590d04d0688370490fb5310e7b
   Supertype: BaseObjectType
@@ -2763,11 +2769,17 @@ Children:
     Value: {"LocaleId":"en-US","Text":"For Histo Dashboard"}
   - Name: TimeRange
     Type: BaseDataVariableType
-    DataType: TimeString
-    Value: "00:24:00:00"
+    DataType: Duration
+    Value: "0:23:59:59.0000000"
   - Name: Duration
     Type: BaseDataVariableType
     DataType: Duration
+  - Name: Dateto1
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Datefrom1
+    Type: BaseDataVariableType
+    DataType: DateTime
 - Name: ComparisionDashboardInstance
   Type: ComparisionDashboard
   Children:
@@ -2874,8 +2886,14 @@ Children:
     Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
   - Name: TimeRange
     Type: BaseDataVariableType
-    DataType: TimeString
-    Value: "000:24:00:00"
+    DataType: Duration
+    Value: "0:23:59:59.0000000"
+  - Name: Datefrom1
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Dateto1
+    Type: BaseDataVariableType
+    DataType: DateTime
 - Name: ComparisionDashboard
   Id: g=0da78a672ae27b69ae302ef010613bd3
   Supertype: BaseObjectType
@@ -3016,8 +3034,14 @@ Children:
     Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
   - Name: TimeRange
     Type: BaseDataVariableType
-    DataType: TimeString
-    Value: "00:24:00:00"
+    DataType: Duration
+    Value: "0:23:59:59.0000000"
+  - Name: Datefrom1
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Dateto1
+    Type: BaseDataVariableType
+    DataType: DateTime
 - Name: ComparisionDashboard1
   Type: ComparisionDashboard
   Children:
@@ -3121,8 +3145,14 @@ Children:
     Value: {"LocaleId":"en-US","Text":"For Comparision Dashboard"}
   - Name: TimeRange
     Type: BaseDataVariableType
-    DataType: TimeString
-    Value: "00:24:00:00"
+    DataType: Duration
+    Value: "0:23:59:59.0000000"
+  - Name: Datefrom1
+    Type: BaseDataVariableType
+    DataType: DateTime
+  - Name: Dateto1
+    Type: BaseDataVariableType
+    DataType: DateTime
 - File: Importer/Importer.yaml
 - Name: ButtonGenerator
   Type: BaseDataVariableType
@@ -6834,3 +6864,15 @@ Children:
   Type: BaseDataVariableType
   DataType: String
 - File: Compressor/Compressor.yaml
+- Name: OneDayTime
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:23:59:59.0000000"
+- Name: DailyReportDateTO
+  Id: g=3c934eaac8501d5635813b0a4baba8cb
+  Type: BaseDataVariableType
+  DataType: DateTime
+- Name: AlarmReportDateTo
+  Id: g=c13100df7d3ebf2f945e596495944d2d
+  Type: BaseDataVariableType
+  DataType: DateTime

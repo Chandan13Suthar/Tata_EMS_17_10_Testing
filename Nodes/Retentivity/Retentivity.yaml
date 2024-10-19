@@ -106,3 +106,138 @@ Children:
     DataType: Boolean
     ReferenceType: HasProperty
     Value: true
+- Name: DateRetentivityStorage2
+  Type: RetentivityStorage
+  Children:
+  - Name: Nodes
+    Type: BaseObjectType
+    Children:
+    - Name: Node1
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"b96e04e0080879986442b889d0509bda","Namespace":36}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node2
+      Type: NodePointer
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"fa9507f3576e4b25d43767ca93dde21c","Namespace":36}
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node3
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Datefrom"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node4
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Dateto"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node5
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Third Report/Date"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node6
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/DailyDateFrom"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node7
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/DailyReportDateTO"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node8
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Third Report/Date1"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node9
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Forth Report/Datefrom"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node10
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/AlarmReportDateTo"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+  - Name: WriteDelay
+    Type: BaseDataVariableType
+    DataType: Duration
+    ReferenceType: HasProperty
+  - Name: DeltaObserverEnabled
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasProperty
+    Value: true

@@ -2002,6 +2002,9 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 2
+            - Class: Reference
+              Target: ns=5;i=1360
+              Direction: Forward
           - Name: FeaturesDemoHome
             Type: Label
             Children:
@@ -8113,6 +8116,9 @@ Children:
               DataType: VerticalAlignment
               ModellingRule: Optional
               Value: 2
+            - Class: Reference
+              Target: ns=5;i=1360
+              Direction: Forward
           - Name: FeaturesDemoHome
             Type: Label
             Children:
