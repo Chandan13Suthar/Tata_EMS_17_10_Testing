@@ -22338,6 +22338,31 @@ Children:
                       Type: BaseDataVariableType
                       DataType: String
                       Value: "HomePageCalculationTask"
+                  - Name: MethodContainer2
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=3;ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "../../../../../../Rectangle2/Voltage Trend/Voltage Trend@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: ns=3;Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "Refresh"
                 - Name: EventArguments
                   Type: MouseClickEvent
                   Children:
@@ -22441,6 +22466,486 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 100.0
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                Value: true
+                Children:
+                - Name: KeyValueConverter1
+                  Type: ValueMapConverter
+                  Children:
+                  - Name: Source
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/HomePageHistogram/HomePage2/SpinBoxValue"
+                  - Name: ns=3;Pairs
+                    Type: BaseObjectType
+                    Children:
+                    - Name: Pair
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair1
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 1
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair2
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 2
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                    - Name: Pair3
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 3
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                    - Name: Pair4
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 4
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair5
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 5
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair6
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 6
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair7
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 7
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+                    - Name: Pair8
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 8
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: Boolean
+                        Value: true
+            - Name: 33KVSattionConnectionStatus
+              Type: Panel
+              WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+              Children:
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 300.0
+              - Name: Label1
+                Type: Label
+                Children:
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
+                - Name: Text
+                  Type: BaseDataVariableType
+                  DataType: LocalizedText
+                  Children:
+                  - Name: KeyValueConverter1
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/HomePageHistogram/HomePage2/SpinBoxValue"
+                    - Name: ns=3;Pairs
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Pair
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "33KV Station Connection "
+                      - Name: Pair1
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 1
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "UTILITY Station Connection "
+                      - Name: Pair2
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 2
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "PUMPROOM Station Connection "
+                      - Name: Pair3
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 3
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "PAINTSHOP Station Connection "
+                      - Name: Pair4
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 4
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "BODYSHOP Station Connection "
+                      - Name: Pair5
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 5
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "TCF Station Connection "
+                      - Name: Pair6
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 6
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "STAMPING Station Connection "
+                      - Name: Pair7
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 7
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "ADMIN Station Connection "
+                      - Name: Pair8
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: UInt32
+                          Value: 8
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: String
+                          Value: "SPP"
+              - Name: Led
+                Type: Led
+                Children:
+                - Name: Active
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  Value: true
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 25.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 25.0
+                - Name: Color
+                  Type: BaseDataVariableType
+                  DataType: Color
+                  Value: "#ff0000"
+                  Children:
+                  - Name: KeyValueConverter1
+                    Type: ValueMapConverter
+                    Children:
+                    - Name: Source
+                      Type: BaseDataVariableType
+                      DataType: BaseDataType
+                      ReferenceType: HasSource
+                      Children:
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{Station}/OperationCode"
+                    - Name: ns=3;Pairs
+                      Type: BaseObjectType
+                      Children:
+                      - Name: Pair
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Int32
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          Value: "#ff0000"
+                      - Name: Pair1
+                        Type: ValueMapPair
+                        Children:
+                        - Name: Key
+                          Type: BaseDataVariableType
+                          DataType: Int32
+                          Value: 1
+                        - Name: Value
+                          Type: BaseDataVariableType
+                          DataType: Color
+                          Value: "#00ff00"
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                - Name: VerticalAlignment
+                  Type: BaseVariableType
+                  DataType: VerticalAlignment
+                  ModellingRule: Optional
+                  Value: 2
+                - Name: HorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: HorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+              - Name: Station
+                Type: Alias
+                DataType: NodeId
+                Children:
+                - Name: Kind
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/ObjectTypes/BaseObjectType/CommunicationStation/MicroControllerStation"
+                - Name: KeyValueConverter1
+                  Type: ValueMapConverter
+                  Children:
+                  - Name: Source
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/Tata_EMS_17_10_Testing/Model/HomePageHistogram/HomePage2/SpinBoxValue"
+                  - Name: ns=3;Pairs
+                    Type: BaseObjectType
+                    Children:
+                    - Name: Pair
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/33KVmeters/MicroControllerStation1"
+                    - Name: Pair1
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 1
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/UtilityMeters/MicroControllerStation1"
+                    - Name: Pair2
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 2
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/PumpRoomMeters/MicroControllerStation1"
+                    - Name: Pair3
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 3
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/PaintshopMeters/MicroControllerStation1"
+                    - Name: Pair4
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 4
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/BodyshopMeters/MicroControllerStation1"
+                    - Name: Pair5
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 5
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/TCFMeters/MicroControllerStation1"
+                    - Name: Pair6
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 6
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/StampingMeters/MicroControllerStation1"
+                    - Name: Pair7
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 7
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/AdminMeters/MicroControllerStation1"
+                    - Name: Pair8
+                      Type: ValueMapPair
+                      Children:
+                      - Name: Key
+                        Type: BaseDataVariableType
+                        DataType: UInt32
+                        Value: 8
+                      - Name: Value
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Value: "/Objects/Tata_EMS_17_10_Testing/CommDrivers/SPPMeters/MicroControllerStation1"
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 60.0
+              - Name: ns=21;LibraryReference
+                Type: ObjectLibraryReference
+                DataType: ObjectLibraryReferenceDataType
+                ModellingRule: None
+                Value: 
+                 {
+                  "TypeId": {
+                   "Id": 72,
+                   "Namespace": 21
+                  },
+                  "Body": {
+                   "libraryGuid": "de905a58759b4ff38bbb66c9d44c67ad",
+                   "objectGuid": "12a11465ebed361835655849b095e10a",
+                   "objectVersion": 1,
+                   "highestIgnoredVersion": 0
+                  }
+                 }
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 10.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -10.0
           - Name: Rectangle1
             Type: Rectangle
             Children:
@@ -22748,7 +23253,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 7.0
+                Value: 6.0
               - Name: Text
                 Type: BaseDataVariableType
                 DataType: LocalizedText
@@ -27592,7 +28097,7 @@ Children:
                 - Name: Query
                   Type: BaseDataVariableType
                   DataType: String
-                  Value: "SELECT * FROM \"DailyJaceDataLogger\"  WHERE Jace  = {0:sql_literal}"
+                  Value: "SELECT"
                   Children:
                   - Name: StringFormatter1
                     Type: StringFormatter
@@ -30098,12 +30603,12 @@ Children:
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 120.0
+      Value: -270.0
     - Name: TopMargin
       Type: BaseVariableType
       DataType: Size
       ModellingRule: Optional
-      Value: 179.0
+      Value: 190.0
     - Name: Width
       Type: BaseVariableType
       DataType: Size
@@ -30191,6 +30696,14 @@ Children:
         - Name: Severity
           Type: PropertyType
           DataType: UInt16
+    - Name: Visible
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
+    - Name: Enabled
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ModellingRule: Optional
 - Name: HomePagePlant_Wise
   Id: g=ab337c863cfe2c4249bbaf43c3867dfe
   Supertype: Panel

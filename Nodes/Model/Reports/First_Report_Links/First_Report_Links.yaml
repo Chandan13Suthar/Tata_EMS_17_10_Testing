@@ -281,6 +281,16 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: Boolean
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Boolean
 - Name: Jace03selection
   Type: BaseDataVariableType
   DataType: String
