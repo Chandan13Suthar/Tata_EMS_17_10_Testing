@@ -22,7 +22,7 @@ Children:
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "2024-01-10T00:00:00.0000000"
-- Name: Daily Date To
+- Name: DailyDateTo
   Type: BaseDataVariableType
   DataType: DateTime
   Value: "2024-01-11T23:59:59.0000000"
