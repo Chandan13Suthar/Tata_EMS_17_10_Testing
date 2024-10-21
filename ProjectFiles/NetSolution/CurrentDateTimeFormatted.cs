@@ -23,9 +23,11 @@ public class CurrentDateTimeFormatted : BaseNetLogic
 	{
 		periodicTask = new PeriodicTask(UpdateTime, 1000, LogicObject);
 		periodicTask.Start();
-	}
 
-	public override void Stop()
+
+    }
+
+    public override void Stop()
 	{
 		periodicTask.Dispose();
 		periodicTask = null;
@@ -53,15 +55,7 @@ public class CurrentDateTimeFormatted : BaseNetLogic
         DateTime currentTime = DateTime.Now;
         DateTime todaydate = new DateTime(currentTime.Year, currentTime.Month, currentTime.Day, 0, 0, 0);
 
-        DateTime time1date = Project.Current.GetVariable("Model/DailyReportDateTO").Value ;
-        Project.Current.GetVariable("Model/Reports/Daily Date To").Value = time1date.Add(new TimeSpan(23, 59, 59));
-
-
-        DateTime time2date = Project.Current.GetVariable("Model/AlarmReportDateTO").Value;
-        Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = time2date.Add(new TimeSpan(23, 59, 59));
-
-
-
+ 
         //Month formatting
         if (MonthVar < 10)
         {

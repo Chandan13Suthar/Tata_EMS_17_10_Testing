@@ -180,3 +180,9 @@ Children:
   Children:
   - Class: Method
     Name: Dialog
+- Name: DateAddUpdateLogic
+  Id: g=da631f7b207bda32cd2ec5192a0e3115
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: DateUpdateTask
