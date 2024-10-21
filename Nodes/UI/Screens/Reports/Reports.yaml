@@ -15636,7 +15636,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -15890,7 +15890,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -16144,7 +16144,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -16398,7 +16398,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -16652,7 +16652,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -16906,7 +16906,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -17160,7 +17160,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -17414,7 +17414,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -17668,7 +17668,7 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 180.0
+              Value: 250.0
             - Name: Item
               Type: Alias
               DataType: NodeId
@@ -30295,7 +30295,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 200.0
+                Value: 300.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30331,7 +30331,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 200.0
+                Value: 300.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30367,7 +30367,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 150.0
+                Value: 120.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30403,7 +30403,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 200.0
+                Value: 180.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30435,11 +30435,11 @@ Children:
               - Name: Title
                 Type: BaseDataVariableType
                 DataType: LocalizedText
-                Value: {"LocaleId":"en-US","Text":"Active Power"}
+                Value: {"LocaleId":"en-US","Text":"Active Power(KW)"}
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 150.0
+                Value: 180.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30475,7 +30475,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 150.0
+                Value: 180.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment
@@ -30511,7 +30511,7 @@ Children:
               - Name: Width
                 Type: BaseDataVariableType
                 DataType: Size
-                Value: 150.0
+                Value: 100.0
               - Name: HeaderAlignment
                 Type: BaseDataVariableType
                 DataType: TextHorizontalAlignment

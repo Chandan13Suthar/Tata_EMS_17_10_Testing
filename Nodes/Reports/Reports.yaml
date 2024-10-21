@@ -23125,13 +23125,12 @@ Children:
         Type: BaseObjectType
         Children:
         - Name: LocalDate
-          Id: g=c6719fefa083a27975e51ae4ec029d29
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 28.447999954223633
+            Value: 33.02000045776367
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23154,7 +23153,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Date"}
+            Value: {"LocaleId":"en-US","Text":"Date Time"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23176,17 +23179,13 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/LocalDate"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
         - Name: Meter
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 27.940000534057617
+            Value: 33.02000045776367
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23210,6 +23209,10 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             Value: {"LocaleId":"en-US","Text":"Meter"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23231,17 +23234,13 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Meter"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
         - Name: Jace
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 10.15999984741211
+            Value: 20.31999969482422
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23265,6 +23264,10 @@ Children:
             Type: BaseDataVariableType
             DataType: LocalizedText
             Value: {"LocaleId":"en-US","Text":"Jace"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23286,11 +23289,7 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Jace"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Consumption
+        - Name: Active_Energy_Total
           Type: ReportDataGridColumn
           Children:
           - Name: Width
@@ -23319,7 +23318,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Active Energy (KWh)"}
+            Value: {"LocaleId":"en-US","Text":"Active Energy(KWh)"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23329,7 +23332,7 @@ Children:
           - Name: OrderBy
             Type: BaseDataVariableType
             DataType: NodePath
-            Value: "{Item}/Consumption"
+            Value: "{Item}/Active_Energy_Total"
           - Name: DataItemTemplate
             Type: ReportDataGridLabelItemTemplate
             Children:
@@ -23340,18 +23343,14 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Consumption"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
+                Value: "{Item}/Active_Energy_Total"
         - Name: Active_Power_Total
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 17.780000686645508
+            Value: 22.860000610351563
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23374,7 +23373,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Active Power"}
+            Value: {"LocaleId":"en-US","Text":"Active Power(KW)"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23396,72 +23399,13 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Active_Power_Total"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Reactive_Power_Total
-          Type: ReportDataGridColumn
-          Children:
-          - Name: Width
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: 17.780000686645508
-            Children:
-            - Name: EngineeringUnits
-              Type: EUInformationType
-              DataType: EUInformation
-              Children:
-              - Name: UnitId
-                Type: BaseVariableType
-                DataType: Int32
-                ReferenceType: HasProperty
-                AccessLevel: Read
-                Value: 5066068
-              - Name: DisplayName
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-              - Name: Description
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Reactive_Power"}
-          - Name: HeaderAlignment
-            Type: BaseDataVariableType
-            DataType: TextHorizontalAlignment
-          - Name: ContentAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-          - Name: OrderBy
-            Type: BaseDataVariableType
-            DataType: NodePath
-            Value: "{Item}/Reactive_Power_Total"
-          - Name: DataItemTemplate
-            Type: ReportDataGridLabelItemTemplate
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Item}/Reactive_Power_Total"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
         - Name: Apparent_Power_Total
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 17.780000686645508
+            Value: 22.860000610351563
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23484,7 +23428,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Apparent Power"}
+            Value: {"LocaleId":"en-US","Text":"Apparent Power(KVA)"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23506,17 +23454,13 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Apparent_Power_Total"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Frequency
+        - Name: Voltage_RY
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 12.699999809265137
+            Value: 17.27199935913086
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23539,7 +23483,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Frequency"}
+            Value: {"LocaleId":"en-US","Text":"Voltage_RY"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23549,7 +23497,7 @@ Children:
           - Name: OrderBy
             Type: BaseDataVariableType
             DataType: NodePath
-            Value: "{Item}/Frequency"
+            Value: "{Item}/Voltage_RY"
           - Name: DataItemTemplate
             Type: ReportDataGridLabelItemTemplate
             Children:
@@ -23560,18 +23508,14 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Frequency"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Avg_PF
+                Value: "{Item}/Voltage_RY"
+        - Name: Voltage_YB
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 10.15999984741211
+            Value: 17.27199935913086
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23594,7 +23538,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Avg_PF"}
+            Value: {"LocaleId":"en-US","Text":"Voltage_YB"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23604,7 +23552,7 @@ Children:
           - Name: OrderBy
             Type: BaseDataVariableType
             DataType: NodePath
-            Value: "{Item}/Avg_PF"
+            Value: "{Item}/Voltage_YB"
           - Name: DataItemTemplate
             Type: ReportDataGridLabelItemTemplate
             Children:
@@ -23615,18 +23563,14 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Avg_PF"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Voltage_LN
+                Value: "{Item}/Voltage_YB"
+        - Name: Voltage_BR
           Type: ReportDataGridColumn
           Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: 17.780000686645508
+            Value: 17.27199935913086
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -23649,7 +23593,11 @@ Children:
           - Name: Title
             Type: BaseDataVariableType
             DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Voltage_LN"}
+            Value: {"LocaleId":"en-US","Text":"Voltage_BR"}
+          - Name: Visible
+            Type: BaseDataVariableType
+            DataType: Boolean
+            Value: true
           - Name: HeaderAlignment
             Type: BaseDataVariableType
             DataType: TextHorizontalAlignment
@@ -23659,7 +23607,7 @@ Children:
           - Name: OrderBy
             Type: BaseDataVariableType
             DataType: NodePath
-            Value: "{Item}/Voltage_LN"
+            Value: "{Item}/Voltage_BR"
           - Name: DataItemTemplate
             Type: ReportDataGridLabelItemTemplate
             Children:
@@ -23670,66 +23618,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "{Item}/Voltage_LN"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Voltage_LL
-          Type: ReportDataGridColumn
-          Children:
-          - Name: Width
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: 17.780000686645508
-            Children:
-            - Name: EngineeringUnits
-              Type: EUInformationType
-              DataType: EUInformation
-              Children:
-              - Name: UnitId
-                Type: BaseVariableType
-                DataType: Int32
-                ReferenceType: HasProperty
-                AccessLevel: Read
-                Value: 5066068
-              - Name: DisplayName
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-              - Name: Description
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Voltage_LL"}
-          - Name: HeaderAlignment
-            Type: BaseDataVariableType
-            DataType: TextHorizontalAlignment
-          - Name: ContentAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-          - Name: OrderBy
-            Type: BaseDataVariableType
-            DataType: NodePath
-            Value: "{Item}/Voltage_LL"
-          - Name: DataItemTemplate
-            Type: ReportDataGridLabelItemTemplate
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Item}/Voltage_LL"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
+                Value: "{Item}/Voltage_BR"
       - Name: SelectedItem
         Type: NodePointer
         DataType: NodeId
@@ -23862,7 +23751,11 @@ Children:
       - Name: SortColumn
         Type: BaseDataVariableType
         DataType: NodeId
-        Value: "/Objects/Tata_EMS_17_10_Testing/Reports/Monthly consumption Report/Sections/Monthlyconsumption/Columns/LocalDate"
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../Columns/LocalDate@NodeId"
       - Name: SortOrder
         Type: BaseDataVariableType
         DataType: SortOrderEnum
