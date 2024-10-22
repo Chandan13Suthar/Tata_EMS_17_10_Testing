@@ -151,12 +151,7 @@ public class RuntimeNetLogic3 : BaseNetLogic
         object[,] resultSet16;
         string[] header16;
 
-        DateTime time1date = Project.Current.GetVariable("Model/DailyReportDateTO").Value;
-        Project.Current.GetVariable("Model/Reports/Daily Date To").Value = time1date.Add(new TimeSpan(23, 59, 59));
-
-
-        DateTime time2date = Project.Current.GetVariable("Model/AlarmReportDateTO").Value;
-        Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = time2date.Add(new TimeSpan(23, 59, 59));
+      
 
 
         //////////////////////////////////////////////////////////////////////////////////For Jace Selection////////////////////////////////////////////////////////////////////////////
@@ -174,7 +169,12 @@ public class RuntimeNetLogic3 : BaseNetLogic
 
             DateTime dateto1 = DateTime.Parse(testto);
             DateTime datefrom1 = DateTime.Parse(testfrom);
+            DateTime time1date = Project.Current.GetVariable("Model/DailyReportDateTO").Value;
+            Project.Current.GetVariable("Model/Reports/Daily Date To").Value = time1date.Add(new TimeSpan(23, 59, 59));
 
+
+            DateTime time2date = Project.Current.GetVariable("Model/AlarmReportDateTO").Value;
+            Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = time2date.Add(new TimeSpan(23, 59, 59));
             if (dateto.Date == datefrom.Date) // If the dates are the same
             {
                 difference = new TimeSpan(23, 59, 59); // Set the time difference to 23:59:59
