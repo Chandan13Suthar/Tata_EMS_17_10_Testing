@@ -29084,51 +29084,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace03selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair1
                             Type: ValueMapPair
@@ -29142,51 +29152,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace05selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair2
                             Type: ValueMapPair
@@ -29200,51 +29220,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace06selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair3
                             Type: ValueMapPair
@@ -29258,51 +29288,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal}  AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace08selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair4
                             Type: ValueMapPair
@@ -29316,51 +29356,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace10selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair5
                             Type: ValueMapPair
@@ -29374,51 +29424,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace11selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair6
                             Type: ValueMapPair
@@ -29432,51 +29492,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace13selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair7
                             Type: ValueMapPair
@@ -29490,51 +29560,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace16selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                           - Name: Pair8
                             Type: ValueMapPair
@@ -29548,51 +29628,61 @@ Children:
                             - Name: Value
                               Type: BaseDataVariableType
                               DataType: String
+                              ModellingRule: None
                               Children:
                               - Name: StringFormatter1
                                 Type: StringFormatter
+                                ModellingRule: None
                                 Children:
                                 - Name: Format
                                   Type: BaseDataVariableType
                                   DataType: LocalizedText
                                   ReferenceType: HasParameter
-                                  ModellingRule: Optional
+                                  ModellingRule: None
                                   Value: {"LocaleId":"en-US","Text":"SELECT LocalDate , Meter ,Jace , Active_Energy_Total ,Active_Power_Total ,Apparent_Power_Total ,Avg_PF ,Voltage_RY ,Voltage_YB ,Voltage_BR FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {4:sql_literal} AND Jace =  {2:sql_literal} AND  Meter = {3:sql_literal}"}
                                 - Name: ns=3;Source0
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
                                 - Name: ns=3;Source2
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
                                 - Name: ns=3;Source3
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Jace16selection"
                                 - Name: ns=3;Source4
                                   Type: BaseDataVariableType
                                   DataType: BaseDataType
                                   ReferenceType: HasSource
+                                  ModellingRule: None
                                   Children:
                                   - Name: DynamicLink
                                     Type: DynamicLink
                                     DataType: NodePath
+                                    ModellingRule: None
                                     Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
                     - Name: ArrayIndex
                       Type: BaseDataVariableType
