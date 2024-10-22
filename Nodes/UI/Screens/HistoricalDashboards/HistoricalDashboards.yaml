@@ -535,7 +535,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 20.0
+                    Value: 19.0
                   - Name: FontWeight
                     Type: BaseDataVariableType
                     DataType: FontWeightEnum
@@ -660,6 +660,36 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../TextFormat"
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 1.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 3.0
+                    - Name: TextHorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: TextHorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 1
+                    - Name: TextVerticalAlignment
+                      Type: BaseVariableType
+                      DataType: TextVerticalAlignment
+                      ModellingRule: Optional
+                      Value: 1
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: FontWeight
+                      Type: BaseDataVariableType
+                      DataType: FontWeightEnum
+                      ModellingRule: Optional
+                      Value: 700
                   - Name: DatePicker
                     Type: DropDownButton
                     Children:
@@ -681,8 +711,44 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../..@NodeId"
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 1
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 40.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 35.0
+                    - Name: TextPosition
+                      Type: BaseDataVariableType
+                      DataType: Position
+                      ModellingRule: Optional
+                      Value: 4
+                    - Name: ImagePosition
+                      Type: BaseDataVariableType
+                      DataType: Position
+                      ModellingRule: Optional
+                      Value: 4
+                    - Name: ImageWidth
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 25.0
                   - Name: Underline
                     Type: PolyLine
+                    Children:
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 35.0
                   - Name: SelectedDate
                     Type: BaseDataVariableType
                     DataType: DateTime
@@ -728,12 +794,26 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 44.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 55.0
+                    Value: 50.0
+                  - Name: CornerRadius
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 5.0
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 35.0
+                  - Name: HorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: HorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 3
                 - Name: Label2
                   Type: Label
                   Children:
@@ -798,6 +878,10 @@ Children:
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
                     Value: 3
+                  - Name: Visible
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ModellingRule: Optional
               - Name: Rectangle2
                 Type: Rectangle
                 Children:
@@ -833,7 +917,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 21.0
+                    Value: 26.0
                   - Name: TextHorizontalAlignment
                     Type: BaseVariableType
                     DataType: TextHorizontalAlignment
@@ -853,11 +937,12 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 5.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 20.0
+                    Value: 19.0
                   - Name: FontWeight
                     Type: BaseDataVariableType
                     DataType: FontWeightEnum
@@ -877,6 +962,11 @@ Children:
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
                     Value: 3
+                  - Name: RightMargin
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 32.0
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -986,6 +1076,31 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../../TextFormat"
+                    - Name: LeftMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 8.0
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 5.0
+                    - Name: FontWeight
+                      Type: BaseDataVariableType
+                      DataType: FontWeightEnum
+                      ModellingRule: Optional
+                      Value: 700
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 3
+                    - Name: TextHorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: TextHorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 1
                   - Name: DatePicker
                     Type: DropDownButton
                     Children:
@@ -1007,8 +1122,29 @@ Children:
                         Type: DynamicLink
                         DataType: NodePath
                         Value: "../..@NodeId"
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 40.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 35.0
+                    - Name: ImageWidth
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 25.0
                   - Name: Underline
                     Type: PolyLine
+                    Children:
+                    - Name: TopMargin
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 35.0
                   - Name: SelectedDate
                     Type: BaseDataVariableType
                     DataType: DateTime
@@ -1054,12 +1190,31 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 38.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 55.0
+                    Value: 50.0
+                  - Name: Height
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 35.0
+                  - Name: CornerRadius
+                    Type: BaseDataVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 5.0
+                  - Name: Width
+                    Type: BaseVariableType
+                    DataType: Size
+                    ModellingRule: Optional
+                    Value: 216.0
+                  - Name: HorizontalAlignment
+                    Type: BaseVariableType
+                    DataType: HorizontalAlignment
+                    ModellingRule: Optional
+                    Value: 3
                 - Name: Label2
                   Type: Label
                   Children:
@@ -4052,15 +4207,17 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 40.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 50.0
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 150.0
+                    Value: 100.0
                   - Name: Height
                     Type: BaseVariableType
                     DataType: Size
@@ -4653,12 +4810,11 @@ Children:
                     Type: BaseVariableType
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
-                    Value: 2
+                    Value: 3
                   - Name: VerticalAlignment
                     Type: BaseVariableType
                     DataType: VerticalAlignment
                     ModellingRule: Optional
-                    Value: 2
                   - Name: FontSize
                     Type: BaseDataVariableType
                     DataType: Size
@@ -4668,6 +4824,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 44.0
                   - Name: BottomMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -4684,15 +4841,17 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 40.0
                   - Name: TopMargin
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 50.0
                   - Name: Width
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
-                    Value: 150.0
+                    Value: 100.0
                   - Name: Height
                     Type: BaseVariableType
                     DataType: Size
@@ -5250,12 +5409,11 @@ Children:
                     Type: BaseVariableType
                     DataType: HorizontalAlignment
                     ModellingRule: Optional
-                    Value: 2
+                    Value: 3
                   - Name: VerticalAlignment
                     Type: BaseVariableType
                     DataType: VerticalAlignment
                     ModellingRule: Optional
-                    Value: 2
                   - Name: FontSize
                     Type: BaseDataVariableType
                     DataType: Size
@@ -5265,6 +5423,7 @@ Children:
                     Type: BaseVariableType
                     DataType: Size
                     ModellingRule: Optional
+                    Value: 44.0
                   - Name: BottomMargin
                     Type: BaseVariableType
                     DataType: Size
@@ -6389,7 +6548,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: FontWeightEnum
                   ModellingRule: Optional
-                  Value: 600
+                  Value: 700
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -8621,7 +8780,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: FontWeightEnum
                   ModellingRule: Optional
-                  Value: 600
+                  Value: 700
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -8799,7 +8958,7 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 18.0
+                      Value: 20.0
                     - Name: HorizontalAlignment
                       Type: BaseVariableType
                       DataType: HorizontalAlignment
@@ -10825,7 +10984,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: FontWeightEnum
                   ModellingRule: Optional
-                  Value: 600
+                  Value: 700
                 - Name: LeftMargin
                   Type: BaseVariableType
                   DataType: Size
@@ -11005,7 +11164,7 @@ Children:
                       Type: BaseDataVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 18.0
+                      Value: 20.0
                     - Name: Style
                       Type: BaseDataVariableType
                       DataType: String
@@ -14049,6 +14208,26 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "../../TextFormat"
+                      - Name: HorizontalAlignment
+                        Type: BaseVariableType
+                        DataType: HorizontalAlignment
+                        ModellingRule: Optional
+                        Value: 3
+                      - Name: VerticalAlignment
+                        Type: BaseVariableType
+                        DataType: VerticalAlignment
+                        ModellingRule: Optional
+                        Value: 2
+                      - Name: TextHorizontalAlignment
+                        Type: BaseVariableType
+                        DataType: TextHorizontalAlignment
+                        ModellingRule: Optional
+                        Value: 1
+                      - Name: FontWeight
+                        Type: BaseDataVariableType
+                        DataType: FontWeightEnum
+                        ModellingRule: Optional
+                        Value: 700
                     - Name: DatePicker
                       Type: DropDownButton
                       Children:
@@ -14070,6 +14249,21 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "../..@NodeId"
+                      - Name: Width
+                        Type: BaseVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 40.0
+                      - Name: Height
+                        Type: BaseVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 30.0
+                      - Name: ImageWidth
+                        Type: BaseDataVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 25.0
                     - Name: Underline
                       Type: PolyLine
                     - Name: SelectedDate
@@ -14103,6 +14297,16 @@ Children:
                             Type: DynamicLink
                             DataType: NodePath
                             Value: "../../../SelectedDate"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
                     - Name: FillColor
                       Type: BaseDataVariableType
                       DataType: Color
@@ -14117,12 +14321,32 @@ Children:
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 171.0
+                      Value: 26.0
                     - Name: TopMargin
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
                       Value: 9.0
+                    - Name: CornerRadius
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 5.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 200.0
+                    - Name: Height
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: -1.0
                 - Name: Rectangle2
                   Type: Rectangle
                   Children:
@@ -14301,6 +14525,16 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "../../TextFormat"
+                      - Name: TextHorizontalAlignment
+                        Type: BaseVariableType
+                        DataType: TextHorizontalAlignment
+                        ModellingRule: Optional
+                        Value: 1
+                      - Name: FontWeight
+                        Type: BaseDataVariableType
+                        DataType: FontWeightEnum
+                        ModellingRule: Optional
+                        Value: 700
                     - Name: DatePicker
                       Type: DropDownButton
                       Children:
@@ -14322,6 +14556,21 @@ Children:
                           Type: DynamicLink
                           DataType: NodePath
                           Value: "../..@NodeId"
+                      - Name: Width
+                        Type: BaseVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 40.0
+                      - Name: Height
+                        Type: BaseVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 30.0
+                      - Name: ImageWidth
+                        Type: BaseDataVariableType
+                        DataType: Size
+                        ModellingRule: Optional
+                        Value: 25.0
                     - Name: Underline
                       Type: PolyLine
                     - Name: SelectedDate
@@ -14355,6 +14604,16 @@ Children:
                             Type: DynamicLink
                             DataType: NodePath
                             Value: "../../../SelectedDate"
+                            Children:
+                            - Name: Mode
+                              Type: BaseVariableType
+                              DataType: DynamicLinkMode
+                              ModellingRule: Optional
+                        - Name: Mode
+                          Type: PropertyType
+                          DataType: DynamicLinkMode
+                          ReferenceType: HasComponent
+                          ModellingRule: Optional
                     - Name: FillColor
                       Type: BaseDataVariableType
                       DataType: Color
@@ -14369,11 +14628,26 @@ Children:
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
-                      Value: 171.0
+                      Value: 26.0
                     - Name: TopMargin
                       Type: BaseVariableType
                       DataType: Size
                       ModellingRule: Optional
+                    - Name: CornerRadius
+                      Type: BaseDataVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 5.0
+                    - Name: HorizontalAlignment
+                      Type: BaseVariableType
+                      DataType: HorizontalAlignment
+                      ModellingRule: Optional
+                      Value: 2
+                    - Name: Width
+                      Type: BaseVariableType
+                      DataType: Size
+                      ModellingRule: Optional
+                      Value: 200.0
                 - Name: Label9
                   Type: Label
                   Children:
@@ -50304,22 +50578,22 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Selection_2_Jace@Value"
+                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 170.0
+              Value: 34.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: -34.0
+              Value: 145.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 126.0
+              Value: 206.0
             - Name: Height
               Type: BaseVariableType
               DataType: Size
@@ -54930,6 +55204,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
+            Value: 5.0
       - Name: RightMargin
         Type: BaseVariableType
         DataType: Size
@@ -55583,67 +55858,6 @@ Children:
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-            - Name: Label8
-              Type: Label
-              Children:
-              - Name: Text
-                Type: BaseDataVariableType
-                DataType: LocalizedText
-                ModellingRule: Optional
-                Value: {"LocaleId":"en-US","Text":"MM/DD/YYYY"}
-              - Name: Width
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 105.0
-              - Name: Height
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 21.0
-              - Name: TextHorizontalAlignment
-                Type: BaseVariableType
-                DataType: TextHorizontalAlignment
-                ModellingRule: Optional
-                Value: 1
-              - Name: TextVerticalAlignment
-                Type: BaseVariableType
-                DataType: TextVerticalAlignment
-                ModellingRule: Optional
-                Value: 1
-              - Name: FontSize
-                Type: BaseDataVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 18.0
-              - Name: LeftMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 174.0
-              - Name: TopMargin
-                Type: BaseVariableType
-                DataType: Size
-                ModellingRule: Optional
-                Value: 124.0
-              - Name: FontWeight
-                Type: BaseDataVariableType
-                DataType: FontWeightEnum
-                ModellingRule: Optional
-                Value: 700
-              - Name: FontFamily
-                Type: BaseDataVariableType
-                DataType: Font
-                ModellingRule: Optional
-              - Name: TextColor
-                Type: BaseDataVariableType
-                DataType: Color
-                ModellingRule: Optional
-                Value: "#000000"
-              - Name: HorizontalAlignment
-                Type: BaseVariableType
-                DataType: HorizontalAlignment
-                ModellingRule: Optional
             - Name: CalendarPicker1
               Type: CalendarPicker
               Children:
@@ -55658,6 +55872,31 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../../TextFormat"
+                - Name: TextHorizontalAlignment
+                  Type: BaseVariableType
+                  DataType: TextHorizontalAlignment
+                  ModellingRule: Optional
+                  Value: 1
+                - Name: FontWeight
+                  Type: BaseDataVariableType
+                  DataType: FontWeightEnum
+                  ModellingRule: Optional
+                  Value: 700
+                - Name: FontSize
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 16.0
+                - Name: LeftMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 8.0
+                - Name: TopMargin
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 3.0
               - Name: DatePicker
                 Type: DropDownButton
                 Children:
@@ -55679,6 +55918,21 @@ Children:
                     Type: DynamicLink
                     DataType: NodePath
                     Value: "../..@NodeId"
+                - Name: Width
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 40.0
+                - Name: Height
+                  Type: BaseVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 30.0
+                - Name: ImageWidth
+                  Type: BaseDataVariableType
+                  DataType: Size
+                  ModellingRule: Optional
+                  Value: 25.0
               - Name: Underline
                 Type: PolyLine
               - Name: SelectedDate
@@ -55732,6 +55986,16 @@ Children:
                 DataType: Size
                 ModellingRule: Optional
                 Value: 85.0
+              - Name: CornerRadius
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 5.0
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 200.0
           - Name: Label1
             Type: Label
             Children:
