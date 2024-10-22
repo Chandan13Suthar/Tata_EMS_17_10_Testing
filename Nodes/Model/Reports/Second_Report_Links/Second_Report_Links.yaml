@@ -2888,6 +2888,16 @@ Children:
         - Name: Value
           Type: BaseDataVariableType
           DataType: Boolean
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: Int32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: Boolean
 - Name: Jace03selection
   Type: BaseDataVariableType
   DataType: String
@@ -6163,3 +6173,95 @@ Children:
   Id: g=b27ebb283fa04bc488b337319ad7f372
   Supertype: BaseDataVariableType
   DataType: Int32
+- Name: GenerateExcelMeterWise
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: JaceExcelExportQuery
+  Id: g=6b47a73e8491082f06f9b26a07a6f5d4
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: ConditionalConverter1
+    Type: ConditionalConverter
+    Children:
+    - Name: Condition
+      Type: BaseDataVariableType
+      DataType: Boolean
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Gererate_J1"
+    - Name: TrueValue
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumptionAgg\" WHERE Month =  {0:sql_literal} AND  Year =  {1:sql_literal}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
+        - Name: ns=3;Source1
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"
+    - Name: FalseValue
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Children:
+      - Name: StringFormatter1
+        Type: StringFormatter
+        Children:
+        - Name: Format
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          ReferenceType: HasParameter
+          Value: {"LocaleId":"en-US","Text":"SELECT *FROM \"DailyConsumptionAgg\" WHERE Month = {0:sql_literal} AND Year = {3:sql_literal} AND Jace =  {2:sql_literal}"}
+        - Name: ns=3;Source0
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Month"
+        - Name: ns=3;Source2
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/jaceselection1"
+        - Name: ns=3;Source3
+          Type: BaseDataVariableType
+          DataType: BaseDataType
+          ReferenceType: HasSource
+          Children:
+          - Name: DynamicLink
+            Type: DynamicLink
+            DataType: NodePath
+            Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/Second_Report_Links/Year"

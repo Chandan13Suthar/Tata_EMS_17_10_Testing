@@ -9737,7 +9737,7 @@ Children:
             Type: BaseVariableType
             DataType: Size
             ModellingRule: Optional
-            Value: 250.0
+            Value: 239.0
           - Name: FillColor
             Type: BaseDataVariableType
             DataType: Color
