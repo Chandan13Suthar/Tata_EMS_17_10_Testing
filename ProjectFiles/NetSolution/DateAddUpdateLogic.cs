@@ -33,5 +33,14 @@ public class DateAddUpdateLogic : BaseNetLogic
             DateTime time2date = alarmReportDateVar.Value;
             Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = time2date.Add(new TimeSpan(23, 59, 59));
         }
+
+        var compareHistoDateVar = Project.Current.GetVariable("Model/Comparision_Dashboard/DateSample");
+        if (compareHistoDateVar != null)
+        {
+            DateTime time3date = compareHistoDateVar.Value;
+            Project.Current.GetVariable("Model/Comparision_Dashboard/Dateto").Value = time3date.Add(new TimeSpan(23, 59, 59));
+        }
+
+        
     }
 }

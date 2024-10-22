@@ -13971,6 +13971,11 @@ Children:
                 Type: BaseDataVariableType
                 DataType: ResourceUri
                 Value: "ns=36;%PROJECTDIR%/imgs/Header.png"
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/DateSample"
               - Name: Width
                 Type: BaseVariableType
                 DataType: Size
@@ -14580,7 +14585,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Dateto"
+                        Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/DateSample"
                         Children:
                         - Name: Mode
                           Type: BaseVariableType
@@ -50578,7 +50583,7 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Datefrom"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
@@ -52816,17 +52821,17 @@ Children:
               - Name: DynamicLink
                 Type: DynamicLink
                 DataType: NodePath
-                Value: "/Objects/Tata_EMS_17_10_Testing/Model/ComparisionDashboardInstance/TimeRange"
+                Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/Dateto"
             - Name: LeftMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 212.0
+              Value: 104.0
             - Name: TopMargin
               Type: BaseVariableType
               DataType: Size
               ModellingRule: Optional
-              Value: 147.0
+              Value: 150.0
             - Name: Width
               Type: BaseVariableType
               DataType: Size
@@ -53288,6 +53293,22 @@ Children:
               - Name: MethodsToCall
                 Type: BaseObjectType
                 Children:
+                - Name: MethodContainer22
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Tata_EMS_17_10_Testing/NetLogic/DateAddUpdateLogic"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "DateUpdateTask"
                 - Name: MethodContainer1
                   Type: BaseObjectType
                   Children:
@@ -54285,6 +54306,22 @@ Children:
               - Name: MethodsToCall
                 Type: BaseObjectType
                 Children:
+                - Name: MethodContainer23
+                  Type: BaseObjectType
+                  Children:
+                  - Name: ns=3;ObjectPointer
+                    Type: NodePointer
+                    DataType: NodeId
+                    Value: "/Objects/Tata_EMS_17_10_Testing/NetLogic/DateAddUpdateLogic"
+                    Children:
+                    - Name: Kind
+                      Type: PropertyType
+                      DataType: NodeId
+                      Value: "/Types/ObjectTypes/BaseObjectType"
+                  - Name: ns=3;Method
+                    Type: BaseDataVariableType
+                    DataType: String
+                    Value: "DateUpdateTask"
                 - Name: MethodContainer20
                   Type: BaseObjectType
                   Children:
