@@ -13971,11 +13971,6 @@ Children:
                 Type: BaseDataVariableType
                 DataType: ResourceUri
                 Value: "ns=36;%PROJECTDIR%/imgs/Header.png"
-                Children:
-                - Name: DynamicLink
-                  Type: DynamicLink
-                  DataType: NodePath
-                  Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/DateSample"
               - Name: Width
                 Type: BaseVariableType
                 DataType: Size
