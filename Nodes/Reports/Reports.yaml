@@ -2737,7 +2737,7 @@ Children:
           - Name: Width
             Type: BaseDataVariableType
             DataType: Size
-            Value: -1.0
+            Value: 20.31999969482422
             Children:
             - Name: EngineeringUnits
               Type: EUInformationType
@@ -2943,62 +2943,6 @@ Children:
                 Type: DynamicLink
                 DataType: NodePath
                 Value: "{Item}/Voltage_BR"
-          - Name: Visible
-            Type: BaseDataVariableType
-            DataType: Boolean
-            Value: true
-        - Name: Avg_PF
-          Type: ReportDataGridColumn
-          Children:
-          - Name: Width
-            Type: BaseDataVariableType
-            DataType: Size
-            Value: 13.970000267028809
-            Children:
-            - Name: EngineeringUnits
-              Type: EUInformationType
-              DataType: EUInformation
-              Children:
-              - Name: UnitId
-                Type: BaseVariableType
-                DataType: Int32
-                ReferenceType: HasProperty
-                AccessLevel: Read
-                Value: 5066068
-              - Name: DisplayName
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-              - Name: Description
-                Type: BaseVariableType
-                DataType: LocalizedText
-                ReferenceType: HasProperty
-          - Name: Title
-            Type: BaseDataVariableType
-            DataType: LocalizedText
-            Value: {"LocaleId":"en-US","Text":"Avg PF"}
-          - Name: HeaderAlignment
-            Type: BaseDataVariableType
-            DataType: TextHorizontalAlignment
-            Value: 1
-          - Name: ContentAlignment
-            Type: BaseVariableType
-            DataType: HorizontalAlignment
-          - Name: OrderBy
-            Type: BaseDataVariableType
-            DataType: NodePath
-            Value: "{Item}/Avg_PF"
-          - Name: DataItemTemplate
-            Type: ReportDataGridLabelItemTemplate
-            Children:
-            - Name: Text
-              Type: BaseDataVariableType
-              DataType: LocalizedText
-              Children:
-              - Name: DynamicLink
-                Type: DynamicLink
-                DataType: NodePath
-                Value: "{Item}/Avg_PF"
           - Name: Visible
             Type: BaseDataVariableType
             DataType: Boolean
