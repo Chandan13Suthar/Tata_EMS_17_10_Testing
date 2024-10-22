@@ -8579,7 +8579,7 @@ Children:
                 Type: BaseVariableType
                 DataType: Size
                 ModellingRule: Optional
-                Value: 10.0
+                Value: -30.0
               - Name: Label1
                 Type: Label
                 Children:
