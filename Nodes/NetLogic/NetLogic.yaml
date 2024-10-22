@@ -111,6 +111,7 @@ Children:
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
   Children:
   - Name: CSVPath
+    Id: g=248609f51f0c08d1944130c19612ef97
     Type: BaseDataVariableType
     DataType: AbsoluteResourceUri
     Children:
@@ -162,6 +163,79 @@ Children:
   - Name: WrapFields
     Type: BaseDataVariableType
     DataType: Boolean
+- Name: MonthGenericTableExporter
+  Id: g=00ce933d450dc3e274a577564bed11c4
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Reports/Monthlyconsumptionreportpath_As_Excel"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../DataStores/ODBCDatabase/Tables/DailyConsumptionAgg@NodeId"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/Reports/Second_Report_Links/JaceExcelExportQuery"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+  - Name: ns=21;LibraryReference
+    Type: ObjectLibraryReference
+    DataType: ObjectLibraryReferenceDataType
+    Value: 
+     {
+      "TypeId": {
+       "Id": 72,
+       "Namespace": 21
+      },
+      "Body": {
+       "libraryGuid": "f0701375ee41467993d632db6a8fdaa5",
+       "objectGuid": "c23f147ab2c551bda6501c8bad3f1ec9",
+       "objectVersion": 1,
+       "highestIgnoredVersion": 0
+      }
+     }
+  - Class: Method
+    Name: Export
 - Name: CurrentDateTimeFormatted
   Type: NetLogic
   WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
