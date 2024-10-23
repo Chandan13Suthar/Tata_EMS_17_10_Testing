@@ -148,18 +148,6 @@ Children:
         Type: PropertyType
         DataType: NodePointerNodeClass
         Value: 2
-    - Name: Node4
-      Type: NodePointer
-      DataType: NodeId
-      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/DateSample"
-      Children:
-      - Name: Kind
-        Type: PropertyType
-        DataType: NodeId
-      - Name: NodeClass
-        Type: PropertyType
-        DataType: NodePointerNodeClass
-        Value: 2
     - Name: Node5
       Type: NodePointer
       DataType: NodeId
@@ -224,6 +212,54 @@ Children:
       Type: NodePointer
       DataType: NodeId
       Value: "/Objects/Tata_EMS_17_10_Testing/Model/AlarmReportDateTo"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node11
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/HarmonicsReport/DateFrom"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node4
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Comparision_Dashboard/DateSample"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node12
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/HarmonicsReport/DateTest"
+      Children:
+      - Name: Kind
+        Type: PropertyType
+        DataType: NodeId
+      - Name: NodeClass
+        Type: PropertyType
+        DataType: NodePointerNodeClass
+        Value: 2
+    - Name: Node13
+      Type: NodePointer
+      DataType: NodeId
+      Value: "/Objects/Tata_EMS_17_10_Testing/Model/Reports/HarmonicsReport/DateTo"
       Children:
       - Name: Kind
         Type: PropertyType

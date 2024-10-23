@@ -41,6 +41,14 @@ public class DateAddUpdateLogic : BaseNetLogic
             Project.Current.GetVariable("Model/Comparision_Dashboard/Dateto").Value = time3date.Add(new TimeSpan(23, 59, 59));
         }
 
-        
+
+        var compareHarmoDateVar = Project.Current.GetVariable("Model/Reports/HarmonicsReport/DateTest");
+        if (compareHarmoDateVar != null)
+        {
+            DateTime time4date = compareHarmoDateVar.Value;
+            Project.Current.GetVariable("Model/Reports/HarmonicsReport/DateTo").Value = time4date.Add(new TimeSpan(23, 59, 59));
+        }
+
+
     }
 }

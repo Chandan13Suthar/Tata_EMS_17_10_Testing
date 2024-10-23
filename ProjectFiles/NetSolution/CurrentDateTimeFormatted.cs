@@ -33,6 +33,8 @@ public class CurrentDateTimeFormatted : BaseNetLogic
 		periodicTask = null;
 	}
 
+
+
 	private void UpdateTime()
 	{
 		LogicObject.GetVariable("Time").Value = DateTime.Now;
@@ -103,7 +105,7 @@ public class CurrentDateTimeFormatted : BaseNetLogic
         }
 
 
-        if (HourVar == 00 && MinVar == 05 && SecVar == 00)
+        if (HourVar == 00 && MinVar == 10 && SecVar == 00)
         {
             Project.Current.GetVariable("Model/Histo Dashboard/Datefrom").Value = todaydate;
             Project.Current.GetVariable("Model/Histo Dashboard/Dateto").Value = todaydate;
@@ -115,8 +117,92 @@ public class CurrentDateTimeFormatted : BaseNetLogic
             Project.Current.GetVariable("Model/Reports/Third Report/Date1").Value = todaydate;
             Project.Current.GetVariable("Model/Reports/Forth Report/Datefrom").Value = todaydate;
             Project.Current.GetVariable("Model/Reports/Forth Report/Dateto").Value = todaydate;
+			Project.Current.GetVariable("Model/Reports/HarmonicsReport/DateTo").Value = todaydate;
+            Project.Current.GetVariable("Model/Reports/HarmonicsReport/DateTest").Value = todaydate;
+			Project.Current.GetVariable("Model/Comparision_Dashboard/Dateto").Value = todaydate;
+            ///// Logic for Reset Production and Target value///////////////////
+            var production = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/ProductionCount");
+            var T33KV = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/Target33KV");
+            var TUtility = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetUtility");
+            var TPump = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetPumpRoom");
+            var TPaint = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetPaintShop");
+            var TBody = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetBodyshop");
+            var TTcf = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetTCF");
+            var TStamping = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetStamping");
+            var TAdmin = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetAdmin");
+            var TSpp = Project.Current.GetVariable("Model/HomePageHistogram/HomePage2/PRoduction_And_Target/TargetSPP");
 
+            if (production != null)
+            {
+                var value = production.RemoteRead();
+                Log.Info(value.ToString());
+                production.RemoteWrite(0);
+            }
 
+            if (T33KV != null)
+            {
+                var value = T33KV.RemoteRead();
+                Log.Info(value.ToString());
+                T33KV.RemoteWrite(0);
+            }
+
+            if (TUtility != null)
+            {
+                var value = TUtility.RemoteRead();
+                Log.Info(value.ToString());
+                TUtility.RemoteWrite(0);
+            }
+
+            if (TPump != null)
+            {
+                var value = TPump.RemoteRead();
+                Log.Info(value.ToString());
+                TPump.RemoteWrite(0);
+            }
+
+            if (TPaint != null)
+            {
+                var value = TPaint.RemoteRead();
+                Log.Info(value.ToString());
+                TPaint.RemoteWrite(0);
+            }
+
+            if (TBody != null)
+            {
+                var value = TBody.RemoteRead();
+                Log.Info(value.ToString());
+                TBody.RemoteWrite(0);
+            }
+
+            if (TTcf != null)
+            {
+                var value = TTcf.RemoteRead();
+                Log.Info(value.ToString());
+                TTcf.RemoteWrite(0);
+            }
+
+            if (TStamping != null)
+            {
+                var value = TStamping.RemoteRead();
+                Log.Info(value.ToString());
+                TStamping.RemoteWrite(0);
+            }
+
+            if (TAdmin != null)
+            {
+                var value = TAdmin.RemoteRead();
+                Log.Info(value.ToString());
+                TAdmin.RemoteWrite(0);
+            }
+
+            if (TSpp != null)
+            {
+                var value = TSpp.RemoteRead();
+                Log.Info(value.ToString());
+                TSpp.RemoteWrite(0);
+            }
+            //////////////////////Logic for reset production and target ends//////////////////////
+  
         }
         String DateOpt = Project.Current.GetVariable("Model/DateTime/DateOperator").Value;
 		String TimeOpt = Project.Current.GetVariable("Model/DateTime/TimeOperator").Value;

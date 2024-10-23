@@ -1,0 +1,445 @@
+Name: HarmonicsReport
+Type: FolderType
+Children:
+- Name: DateFrom
+  Id: g=bf2339975cc4715de32e3ba393d83c4f
+  Type: BaseDataVariableType
+  DataType: DateTime
+- Name: DateTo
+  Id: g=986ba5a5026f70b1804912db943a1461
+  Type: BaseDataVariableType
+  DataType: DateTime
+- Class: DataType
+  Name: 33KVMeters
+  Id: g=768f846be039ac7be4359b92a2b1c4e6
+  Supertype: Enumeration
+  EnumDefinition: 
+   {
+    "Name": "33KVMeters",
+    "DataType": {
+     "IdType": 2,
+     "Id": "768f846be039ac7be4359b92a2b1c4e6",
+     "Namespace": 36
+    },
+    "Fields": [{
+      "Name": "Value0",
+      "Value": 0,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "All"
+      }
+     },{
+      "Name": "Value1",
+      "Value": 1,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_INCOMER1"
+      }
+     },{
+      "Name": "Value2",
+      "Value": 2,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_INCOMER2"
+      }
+     },{
+      "Name": "Value3",
+      "Value": 3,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG1_IN1_SPARE"
+      }
+     },{
+      "Name": "Value4",
+      "Value": 4,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG2_IN1_UTILITY"
+      }
+     },{
+      "Name": "Value5",
+      "Value": 5,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG3_IN1_STAMPING"
+      }
+     },{
+      "Name": "Value6",
+      "Value": 6,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG4_IN1_TCF"
+      }
+     },{
+      "Name": "Value7",
+      "Value": 7,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG5_IN1_BODYSHOP"
+      }
+     },{
+      "Name": "Value8",
+      "Value": 8,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG6_IN1_ENGINESHOP"
+      }
+     },{
+      "Name": "Value9",
+      "Value": 9,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG7_IN1_PAINTSHOP"
+      }
+     },{
+      "Name": "Value10",
+      "Value": 10,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG8_IN2_PAINTSHOP"
+      }
+     },{
+      "Name": "Value11",
+      "Value": 11,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG9_IN2_ENGINESHOP"
+      }
+     },{
+      "Name": "Value12",
+      "Value": 12,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG10_IN2_BODYSHOP"
+      }
+     },{
+      "Name": "Value13",
+      "Value": 13,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG11_IN2_TCF"
+      }
+     },{
+      "Name": "Value14",
+      "Value": 14,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG12_IN2_STAMPING"
+      }
+     },{
+      "Name": "Value15",
+      "Value": 15,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG13_IN2_UTILITY"
+      }
+     },{
+      "Name": "Value16",
+      "Value": 16,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG14_IN2_SPARE"
+      }
+     },{
+      "Name": "Value17",
+      "Value": 17,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG15_IN2_SPP"
+      }
+     },{
+      "Name": "Value18",
+      "Value": 18,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_OG16_IN1_SPP"
+      }
+     },{
+      "Name": "Value19",
+      "Value": 19,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_DG_PANEL_EB_IN1"
+      }
+     },{
+      "Name": "Value20",
+      "Value": 20,
+      "DisplayName": {
+       "LocaleId": "en-US",
+       "Text": "J1_DG_PANEL_DG_IN2"
+      }
+     }]
+   }
+  Children:
+  - Name: ns=0;EnumValues
+    Type: BaseDataVariableType
+    DataType: EnumValueType
+    ModellingRule: None
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+    Value: [{"TypeId":{"Id":7594},"Body":{"Value":0,"DisplayName":{"LocaleId":"en-US","Text":"All"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":1,"DisplayName":{"LocaleId":"en-US","Text":"J1_INCOMER1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":2,"DisplayName":{"LocaleId":"en-US","Text":"J1_INCOMER2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":3,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG1_IN1_SPARE"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":4,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG2_IN1_UTILITY"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":5,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG3_IN1_STAMPING"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":6,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG4_IN1_TCF"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":7,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG5_IN1_BODYSHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":8,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG6_IN1_ENGINESHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":9,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG7_IN1_PAINTSHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":10,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG8_IN2_PAINTSHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":11,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG9_IN2_ENGINESHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":12,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG10_IN2_BODYSHOP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":13,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG11_IN2_TCF"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":14,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG12_IN2_STAMPING"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":15,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG13_IN2_UTILITY"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":16,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG14_IN2_SPARE"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":17,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG15_IN2_SPP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":18,"DisplayName":{"LocaleId":"en-US","Text":"J1_OG16_IN1_SPP"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":19,"DisplayName":{"LocaleId":"en-US","Text":"J1_DG_PANEL_EB_IN1"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":7594},"Body":{"Value":20,"DisplayName":{"LocaleId":"en-US","Text":"J1_DG_PANEL_DG_IN2"},"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: MeterSelection
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: MeterName
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+  Children:
+  - Name: KeyValueConverter1
+    Type: ValueMapConverter
+    Children:
+    - Name: Source
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../MeterSelection"
+    - Name: ns=3;Pairs
+      Type: BaseObjectType
+      Children:
+      - Name: Pair
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"ALL"}
+      - Name: Pair1
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 1
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_INCOMER1"}
+      - Name: Pair2
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 2
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_INCOMER2"}
+      - Name: Pair3
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 3
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG1_IN1_SPARE"}
+      - Name: Pair4
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 4
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG2_IN1_UTILITY"}
+      - Name: Pair5
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 5
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG3_IN1_STAMPING"}
+      - Name: Pair6
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 6
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG4_IN1_TCF"}
+      - Name: Pair7
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 7
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG5_IN1_BODYSHOP"}
+      - Name: Pair8
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 8
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG6_IN1_ENGINESHOP"}
+      - Name: Pair9
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 9
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG7_IN1_PAINTSHOP"}
+      - Name: Pair10
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 10
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG8_IN2_PAINTSHOP"}
+      - Name: Pair11
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 11
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG9_IN2_ENGINESHOP"}
+      - Name: Pair12
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 12
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG10_IN2_BODYSHOP"}
+      - Name: Pair13
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 13
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG11_IN2_TCF"}
+      - Name: Pair14
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 14
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG12_IN2_STAMPING"}
+      - Name: Pair15
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 15
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG13_IN2_UTILITY"}
+      - Name: Pair16
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 16
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG14_IN2_SPARE"}
+      - Name: Pair17
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 17
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG15_IN2_SPP"}
+      - Name: Pair18
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 18
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_OG16_IN1_SPP"}
+      - Name: Pair19
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 19
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_DG_PANEL_EB_IN1"}
+      - Name: Pair20
+        Type: ValueMapPair
+        Children:
+        - Name: Key
+          Type: BaseDataVariableType
+          DataType: UInt32
+          Value: 20
+        - Name: Value
+          Type: BaseDataVariableType
+          DataType: LocalizedText
+          Value: {"LocaleId":"en-US","Text":"J1_DG_PANEL_DG_IN2"}
+- Name: Metername1
+  Type: BaseDataVariableType
+  DataType: Int32
+- Name: HarmonicsReportPath
+  Id: g=5da736eada7edcb91bfc4863cec1ecb0
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "D:\\Harmonics\\Harmonics_Report.pdf"
+- Name: DateTest
+  Id: g=cbaa24a25809edb4f89e34054ce4d068
+  Type: BaseDataVariableType
+  DataType: DateTime

@@ -627,6 +627,54 @@ Children:
         - Name: Voltage_BN
           Type: StoreColumn
           DataType: Float
+    - Name: Harmonics
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=11;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=11;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Timestamp
+          Type: StoreColumn
+          DataType: UtcTime
+        - Name: LocalTimestamp
+          Type: StoreColumn
+          DataType: DateTime
+        - Name: Phase_R_Voltage_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Voltage_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Voltage_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_R_Current_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_Y_Current_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Phase_B_Current_THD
+          Type: StoreColumn
+          DataType: Float
+        - Name: Jace
+          Type: StoreColumn
+          DataType: String
+        - Name: Meter
+          Type: StoreColumn
+          DataType: String
   - Name: Type
     Type: PropertyType
     DataType: DBMSType

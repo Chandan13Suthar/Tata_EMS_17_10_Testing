@@ -246,8 +246,6 @@ Children:
   - Name: UTCTime
     Type: BaseDataVariableType
     DataType: DateTime
-- Name: LogicForResetProductionAndTarget
-  Type: NetLogic
 - Name: ReportGenerationDialogLogic
   Id: g=e11ba6dff61f4ad360b485744110b662
   Type: NetLogic
